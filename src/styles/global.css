@@ -7,6 +7,7 @@
   --color-dark: #0f172a;
   --color-darker: #0b1120;
   --color-light: #f8fafc;
+  --color-secondary-foreground: #f8fafc;
 }
 
 @layer utilities {
