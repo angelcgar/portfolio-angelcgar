@@ -52,50 +52,50 @@ const proyectos = [
 ---
 
 <section id="proyectos" class="py-20 bg-dark">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-12 text-center">
+  <div class="container px-4 mx-auto">
+    <h2 class="mb-12 text-3xl font-bold text-center">
       Mis <span class="text-accent">Proyectos</span>
     </h2>
-    
+
     <!-- Filter buttons -->
     <div class="flex flex-wrap justify-center gap-2 mb-10">
-      <button class="filter-btn active py-1 px-4 rounded-full text-sm transition-colors duration-300 bg-accent text-darker font-medium" data-filter="all">
+      <button class="px-4 py-1 text-sm font-medium transition-colors duration-300 rounded-full bg-accent text-darker filter-btn active" data-filter="all">
         Todos los proyectos
       </button>
-      
+
       {categorias.map((cat) => (
-        <button class="filter-btn py-1 px-4 rounded-full text-sm transition-colors duration-300 bg-darker text-light hover:bg-dark hover:text-accent" data-filter={cat}>
+        <button class="px-4 py-1 text-sm transition-colors duration-300 rounded-full bg-darker text-light hover:bg-dark hover:text-accent filter-btn" data-filter={cat}>
           {cat}
         </button>
       ))}
     </div>
-    
+
     <!-- Projects grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       {proyectos.map((proyecto) => (
         <div class="proyecto-card bg-darker rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]" data-category={proyecto.categoria}>
-          <div class="relative overflow-hidden h-48">
-            <img 
-              src={proyecto.imagen} 
-              alt={proyecto.titulo} 
-              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          <div class="relative h-48 overflow-hidden">
+            <img
+              src={proyecto.imagen}
+              alt={proyecto.titulo}
+              class="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
             />
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">{proyecto.titulo}</h3>
+            <h3 class="mb-2 text-xl font-semibold">{proyecto.titulo}</h3>
             <div class="flex flex-wrap gap-2 mb-4">
               {proyecto.tecnologias.map((tech) => (
-                <span class="text-xs bg-dark py-1 px-2 rounded text-primary">{tech}</span>
+                <span class="px-2 py-1 text-xs rounded bg-dark text-primary">{tech}</span>
               ))}
             </div>
-            <div class="flex justify-between items-center">
-              <a href="#" class="text-sm inline-flex items-center text-accent hover:text-accent/80">
+            <div class="flex items-center justify-between">
+              <a href="#" class="inline-flex items-center text-sm text-accent hover:text-accent/80">
                 <span class="mr-1">Código</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
                 </svg>
               </a>
-              <a href="#" class="text-sm bg-accent text-darker py-1 px-3 rounded hover:bg-accent/90 transition-colors duration-300">Demo</a>
+              <a href="#" class="px-3 py-1 text-sm transition-colors duration-300 rounded bg-accent text-darker hover:bg-accent/90">Demo</a>
             </div>
           </div>
         </div>
@@ -107,8 +107,8 @@ const proyectos = [
 <script>
   // Projects filtering
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.proyecto-card');
-  
+  const projectCards = document.querySelectorAll<HTMLDivElement>('.proyecto-card');
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       // Update active button
@@ -116,9 +116,9 @@ const proyectos = [
       filterBtns.forEach(b => b.classList.add('bg-darker', 'text-light', 'hover:bg-dark', 'hover:text-accent'));
       btn.classList.add('active', 'bg-accent', 'text-darker');
       btn.classList.remove('bg-darker', 'text-light', 'hover:bg-dark', 'hover:text-accent');
-      
+
       const filter = btn.getAttribute('data-filter');
-      
+
       projectCards.forEach(card => {
         if (filter === 'all' || card.getAttribute('data-category') === filter) {
           card.style.display = 'block';

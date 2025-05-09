@@ -46,16 +46,16 @@ const habilidades = [
 ---
 
 <section id="habilidades" class="py-20 bg-darker">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-12 text-center">
+  <div class="container px-4 mx-auto">
+    <h2 class="mb-12 text-3xl font-bold text-center">
       Mis <span class="text-accent">Habilidades</span>
     </h2>
-    
-    <div class="flex flex-wrap justify-center gap-8 max-w-3xl mx-auto">
+
+    <div class="flex flex-wrap justify-center max-w-3xl gap-8 mx-auto">
       {habilidades.map((skill) => (
-        <div class="skill-card bg-dark/60 p-6 rounded-lg flex flex-col items-center justify-center transition-transform duration-300 hover:scale-110" style={`--skill-color: ${skill.color}`}>
+        <div class="flex flex-col items-center justify-center p-6 transition-transform duration-300 rounded-lg skill-card bg-dark/60 hover:scale-110" style={`--skill-color: ${skill.color}`}>
           <div class="mb-3" set:html={skill.icono} />
-          <span class="text-light font-medium">{skill.nombre}</span>
+          <span class="font-medium text-light">{skill.nombre}</span>
         </div>
       ))}
     </div>
