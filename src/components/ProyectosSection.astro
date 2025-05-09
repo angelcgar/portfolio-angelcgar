@@ -89,7 +89,7 @@ const proyectos = [
     <!-- Projects grid -->
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       {proyectos.map((proyecto) => (
-        <div class="proyecto-card bg-darker rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]" data-category={proyecto.categoria}>
+        <div class="bg-darker rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] proyecto-card" data-category={proyecto.categoria}>
           <div class="relative h-48 overflow-hidden">
             <img
               src={proyecto.imagen}
