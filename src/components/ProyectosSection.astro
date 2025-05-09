@@ -122,7 +122,7 @@ const proyectos = [
 
 <script>
   // Projects filtering
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
   const projectCards = document.querySelectorAll<HTMLDivElement>('.proyecto-card');
 
   filterBtns.forEach(btn => {
