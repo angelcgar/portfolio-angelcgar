@@ -53,7 +53,7 @@ const habilidades = [
 
     <div class="flex flex-wrap justify-center max-w-3xl gap-8 mx-auto">
       {habilidades.map((skill) => (
-        <div class="flex flex-col items-center justify-center p-6 transition-transform duration-300 rounded-lg skill-card bg-dark/60 hover:scale-110" style={`--skill-color: ${skill.color}`}>
+        <div class="flex flex-col items-center justify-center p-6 transition-transform duration-300 rounded-lg select-none bg-dark/60 hover:scale-110 cursor-crosshair skill-card" style={`--skill-color: ${skill.color}`}>
           <div class="mb-3" set:html={skill.icono} />
           <span class="font-medium text-light">{skill.nombre}</span>
         </div>
