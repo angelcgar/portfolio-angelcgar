@@ -1,0 +1,87 @@
+[
+  {
+    "name": "aplicacion-tareas",
+    "title": "Aplicación de Tareas",
+    "image": "https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "Web Application",
+    "url": "#",
+    "technologies": [
+      "React",
+      "CSS",
+      "Firebase"
+    ]
+  },
+  {
+    "name": "aplicacion-clima",
+    "title": "Aplicación de Clima",
+    "image": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "Web Application",
+    "url": "#",
+    "technologies": [
+      "JavaScript",
+      "API",
+      "CSS"
+    ]
+  },
+  {
+    "name": "aplicacion-notas",
+    "title": "Aplicación de Notas",
+    "image": "https://images.pexels.com/photos/139764/pexels-photo-139764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "Web Application",
+    "url": "#",
+    "technologies": [
+      "React",
+      "TailwindCSS",
+      "Firebase"
+    ]
+  },
+  {
+    "name": "bolg-personal",
+    "title": "Blog Personal",
+    "image": "https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "Juegos",
+    "url": "#",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "name": "dashboard-analitico",
+    "title": "Dashboard Analítico",
+    "image": "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "Dashboard",
+    "url": "#",
+    "technologies": [
+      "React",
+      "API",
+      "TailwindCSS",
+      "Node"
+    ]
+  },
+  {
+    "name": "sitio-web-recetas",
+    "title": "Sitio Web de Recetas",
+    "image": "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "E-commerce",
+    "url": "#",
+    "technologies": [
+      "React",
+      "API",
+      "TailwindCSS"
+    ]
+  },
+  {
+    "name": "nocritty",
+    "title": "Nocritty",
+    "image": "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "Backend",
+    "url": "#",
+    "technologies": [
+      "React",
+      "API",
+      "TailwindCSS"
+    ]
+  }
+]

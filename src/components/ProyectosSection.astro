@@ -1,4 +1,6 @@
 ---
+import { fetchData } from '../lib/api';
+
 const categorias = [
 	'Web Application',
 	'Juegos',
@@ -7,64 +9,7 @@ const categorias = [
 	'Backend',
 ];
 
-const proyectos = [
-	{
-		titulo: 'Aplicación de Tareas',
-		imagen:
-			'https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-		categoria: 'Web Application',
-		url: '#',
-		tecnologias: ['React', 'CSS', 'Firebase'],
-	},
-	{
-		titulo: 'Aplicación de Clima',
-		imagen:
-			'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-		categoria: 'Web Application',
-		url: '#',
-		tecnologias: ['JavaScript', 'API', 'CSS'],
-	},
-	{
-		titulo: 'Aplicación de Notas',
-		imagen:
-			'https://images.pexels.com/photos/139764/pexels-photo-139764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-		categoria: 'Web Application',
-		url: '#',
-		tecnologias: ['React', 'TailwindCSS', 'Firebase'],
-	},
-	{
-		titulo: 'Blog Personal',
-		imagen:
-			'https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-		categoria: 'Juegos',
-		url: '#',
-		tecnologias: ['HTML', 'CSS', 'JavaScript'],
-	},
-	{
-		titulo: 'Dashboard Analítico',
-		imagen:
-			'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-		categoria: 'Dashboard',
-		url: '#',
-		tecnologias: ['React', 'API', 'TailwindCSS', 'Node'],
-	},
-	{
-		titulo: 'Sitio Web de Recetas',
-		imagen:
-			'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-		categoria: 'E-commerce',
-		url: '#',
-		tecnologias: ['React', 'API', 'TailwindCSS'],
-	},
-	{
-		titulo: 'Nocritty',
-		imagen:
-			'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-		categoria: 'Backend',
-		url: '#',
-		tecnologias: ['React', 'API', 'TailwindCSS'],
-	},
-];
+const proyectos = await fetchData();
 ---
 
 <section id="proyectos" class="py-20 bg-dark">
@@ -75,12 +20,12 @@ const proyectos = [
 
     <!-- Filter buttons -->
     <div class="flex flex-wrap justify-center gap-2 mb-10">
-      <button class="px-4 py-1 text-sm font-medium transition-colors duration-300 rounded-full bg-accent text-darker filter-btn active" data-filter="all">
+      <button class="px-4 py-1 text-sm font-medium transition-colors duration-300 rounded-full bg-accent text-darker filter-btn cursor-pointer active" data-filter="all">
         Todos los proyectos
       </button>
 
       {categorias.map((cat) => (
-        <button class="px-4 py-1 text-sm transition-colors duration-300 rounded-full bg-darker text-light hover:bg-dark hover:text-accent filter-btn" data-filter={cat}>
+        <button class="px-4 py-1 text-sm transition-colors duration-300 rounded-full bg-darker text-light hover:bg-dark hover:text-accent cursor-pointer filter-btn" data-filter={cat}>
           {cat}
         </button>
       ))}
@@ -89,18 +34,18 @@ const proyectos = [
     <!-- Projects grid -->
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       {proyectos.map((proyecto) => (
-        <div class="bg-darker rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] proyecto-card" data-category={proyecto.categoria}>
+        <div class="bg-darker rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] proyecto-card" data-category={proyecto.category}>
           <div class="relative h-48 overflow-hidden">
             <img
-              src={proyecto.imagen}
-              alt={proyecto.titulo}
+              src={proyecto.image}
+              alt={proyecto.title}
               class="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
             />
           </div>
           <div class="p-6">
-            <h3 class="mb-2 text-xl font-semibold">{proyecto.titulo}</h3>
+            <h3 class="mb-2 text-xl font-semibold">{proyecto.title}</h3>
             <div class="flex flex-wrap gap-2 mb-4">
-              {proyecto.tecnologias.map((tech) => (
+              {proyecto.technologies.map((tech) => (
                 <span class="px-2 py-1 text-xs rounded bg-dark text-secondary-foreground">{tech}</span>
               ))}
             </div>
