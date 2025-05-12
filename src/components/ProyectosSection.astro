@@ -1,5 +1,5 @@
 ---
-import { fetchData } from '../lib/api';
+import { getProjectData } from '../lib/api';
 
 const categorias = [
 	'Web Application',
@@ -9,7 +9,7 @@ const categorias = [
 	'Backend',
 ];
 
-const proyectos = await fetchData();
+const proyectos = await getProjectData();
 ---
 
 <section id="proyectos" class="py-20 bg-dark">
