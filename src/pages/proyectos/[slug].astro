@@ -1,0 +1,59 @@
+---
+export const prerender = true;
+
+import type { GetStaticPaths } from 'astro';
+import { getProjectData } from '../../lib/api';
+import Layout from '../../layouts/Layout.astro';
+
+export const getStaticPaths = (async () => {
+	const proyectos = await getProjectData();
+
+	const paths = proyectos.map((slug) => ({
+		params: { slug: slug.name },
+	}));
+
+	return paths;
+}) satisfies GetStaticPaths;
+
+const { slug } = Astro.params;
+
+const proyecto = await getProjectData().then((data) =>
+	data.find((proyecto) => proyecto.name === slug),
+);
+if (!proyecto) {
+	throw new Error(`No se encontró el proyecto con slug: ${slug}`);
+}
+---
+
+<Layout title={proyecto.title}>
+	<main class="container mx-auto px-4 pt-32">
+			<article class="max-w-4xl mx-auto">
+					<header class="mb-8">
+							<h1 class="text-4xl font-extrabold text-gray-800 dark:text-white mb-4 text-center">{proyecto.title}</h1>
+							<!-- <p class="text-lg text-gray-600">{proyecto.description}</p> -->
+					</header>
+
+					<section class="mb-8 flex flex-col items-center">
+							<img
+									src={proyecto.image}
+									alt={proyecto.title}
+									class="object-cover w-full h-auto rounded-lg shadow-md max-w-2xl"
+							/>
+					</section>
+
+					<section class="mb-8">
+							<h2 class="text-2xl font-bold text-gray-800 mb-4">Detalles del Proyecto</h2>
+							<!-- <p class="text-gray-700 leading-relaxed">{proyecto.details}</p> -->
+					</section>
+
+					<footer class="mt-12">
+							<a
+									href="/"
+									class="inline-block text-accent underline text-lg hover:text-accent-dark transition"
+							>
+									← Volver a Proyectos
+							</a>
+					</footer>
+			</article>
+	</main>
+</Layout>
