@@ -43,7 +43,9 @@ const proyectos = await getProjectData();
             />
           </div>
           <div class="p-6">
-            <h3 class="mb-2 text-xl font-semibold">{proyecto.title}</h3>
+            <a href={`/proyectos/${proyecto.name}`}>
+              <h3 class="mb-2 text-xl font-semibold hover:text-accent underline">{proyecto.title}</h3>
+            </a>
             <div class="flex flex-wrap gap-2 mb-4">
               {proyecto.technologies.map((tech) => (
                 <span class="px-2 py-1 text-xs rounded bg-dark text-secondary-foreground">{tech}</span>
