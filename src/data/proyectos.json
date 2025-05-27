@@ -2,19 +2,19 @@
   {
     "name": "aplicacion-tareas",
     "title": "Aplicación de Tareas",
-    "image": "https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "/img/listaTareas.webp",
     "category": "Web Application",
     "url": "#",
     "technologies": [
       "React",
       "CSS",
-      "Firebase"
+      "Vite"
     ]
   },
   {
     "name": "aplicacion-clima",
     "title": "Aplicación de Clima",
-    "image": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "/img/listaTareas.webp",
     "category": "Web Application",
     "url": "#",
     "technologies": [
@@ -24,27 +24,64 @@
     ]
   },
   {
-    "name": "aplicacion-notas",
-    "title": "Aplicación de Notas",
-    "image": "https://images.pexels.com/photos/139764/pexels-photo-139764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "name": "clon-chat-gpt",
+    "title": "Clon de Chat GPT",
+    "image": "/img/clonChatGpt.png",
     "category": "Web Application",
     "url": "#",
     "technologies": [
-      "React",
-      "TailwindCSS",
-      "Firebase"
+      "JavaScript",
+      "API",
+      "CSS"
     ]
   },
   {
-    "name": "bolg-personal",
+    "name": "calculadora",
+    "title": "Calculadora",
+    "image": "/img/calculadora.webp",
+    "category": "Web Application",
+    "url": "https://amazing-queijadas-ba02d4.netlify.app/",
+    "technologies": [
+      "React",
+      "TailwindCSS",
+      "Typescript"
+    ]
+  },
+  {
+    "name": "acortador-url",
+    "title": "Acortador de URL",
+    "image": "/img/acortadorURLs.png",
+    "category": "Web Application",
+    "url": "https://amazing-queijadas-ba02d4.netlify.app/",
+    "technologies": [
+      "React",
+      "TailwindCSS",
+      "Typescript"
+    ]
+  },
+  {
+    "name": "heroes-app",
+    "title": "Pagina de homenaje",
+    "image": "/img/heroesApp.png",
+    "category": "Web Application",
+    "url": "https://amazing-queijadas-ba02d4.netlify.app/",
+    "technologies": [
+      "React",
+      "TailwindCSS",
+      "Typescript"
+    ]
+  },
+  {
+    "name": "blog-personal",
     "title": "Blog Personal",
-    "image": "https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "/img/blogPersonal.png",
     "category": "Juegos",
     "url": "#",
     "technologies": [
       "HTML",
       "CSS",
-      "JavaScript"
+      "JavaScript",
+      "Astro"
     ]
   },
   {
@@ -61,9 +98,9 @@
     ]
   },
   {
-    "name": "sitio-web-recetas",
-    "title": "Sitio Web de Recetas",
-    "image": "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "name": "lista-de-peliculas",
+    "title": "Lista de Películas",
+    "image": "/img/peliculas.webp",
     "category": "E-commerce",
     "url": "#",
     "technologies": [
@@ -75,7 +112,7 @@
   {
     "name": "nocritty",
     "title": "Nocritty",
-    "image": "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "image": "/img/nocritty.png",
     "category": "Backend",
     "url": "#",
     "technologies": [
