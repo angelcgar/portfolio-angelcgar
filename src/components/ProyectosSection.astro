@@ -51,12 +51,12 @@ const proyectos = await getProjectData();
               <img
                 src={proyecto.image}
                 alt={proyecto.title}
-                class="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
+                class="object-cover w-full h-full transition-transform duration-500 hover:scale-110 hover:cursor-crosshair"
               />
             </div>
             <div class="p-6">
               <a href={`/proyectos/${proyecto.name}`}>
-                <h3 class="mb-2 text-xl font-semibold underline hover:text-accent">
+                <h3 class="inline-block mb-2 text-xl font-semibold underline hover:text-accent">
                   {proyecto.title}
                 </h3>
               </a>
