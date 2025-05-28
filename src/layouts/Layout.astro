@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -49,7 +49,9 @@ const { title } = Astro.props;
   </head>
   <body class="">
     <Navbar />
-    <main class="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100">
+    <main
+      class="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100"
+    >
       <slot />
     </main>
     <Footer />
@@ -58,7 +60,7 @@ const { title } = Astro.props;
 
 <style is:global>
   html {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
   }
   body {

@@ -1,0 +1,20 @@
+# Ignorar archivos de configuración y dependencias
+node_modules/
+dist/
+build/
+
+# Ignorar archivos específicos
+*.min.js
+*.min.css
+*.map
+
+# Ignorar directorios de configuración
+.vscode/
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos generados automáticamente
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

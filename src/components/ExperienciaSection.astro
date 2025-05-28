@@ -1,33 +1,33 @@
 ---
 const experiencias = [
-	{
-		puesto: 'Desarrollador Frontend',
-		empresa: 'TechSolutions',
-		periodo: 'Marzo 2023 - Presente',
-		descripcion:
-			'Desarrollo de interfaces de usuario para aplicaciones web utilizando React y TypeScript. Colaboración con el equipo de diseño para implementar mockups y prototipos. Optimización del rendimiento y mantenimiento de código existente.',
-	},
-	{
-		puesto: 'Desarrollador Web Junior',
-		empresa: 'DigitalCreative',
-		periodo: 'Enero 2022 - Febrero 2023',
-		descripcion:
-			'Creación de sitios web responsive utilizando HTML, CSS y JavaScript. Implementación de funcionalidades dinámicas con jQuery y optimización para dispositivos móviles. Mantenimiento y actualización de sitios web existentes.',
-	},
-	{
-		puesto: 'Desarrollador Web',
-		empresa: 'FreelanceWork',
-		periodo: 'Septiembre 2021 - Enero 2022',
-		descripcion:
-			'Desarrollo de sitios web para pequeñas empresas y emprendedores. Creación de landing pages, sitios corporativos y tiendas online con WordPress. Implementación de diseños personalizados y funcionalidades específicas según requerimientos del cliente.',
-	},
-	{
-		puesto: 'Desarrollador Web',
-		empresa: 'FreelanceWork',
-		periodo: 'Septiembre 2021 - Enero 2022',
-		descripcion:
-			'Desarrollo de sitios web para pequeñas empresas y emprendedores. Creación de landing pages, sitios corporativos y tiendas online con WordPress. Implementación de diseños personalizados y funcionalidades específicas según requerimientos del cliente.',
-	},
+  {
+    puesto: 'Desarrollador Frontend',
+    empresa: 'TechSolutions',
+    periodo: 'Marzo 2023 - Presente',
+    descripcion:
+      'Desarrollo de interfaces de usuario para aplicaciones web utilizando React y TypeScript. Colaboración con el equipo de diseño para implementar mockups y prototipos. Optimización del rendimiento y mantenimiento de código existente.',
+  },
+  {
+    puesto: 'Desarrollador Web Junior',
+    empresa: 'DigitalCreative',
+    periodo: 'Enero 2022 - Febrero 2023',
+    descripcion:
+      'Creación de sitios web responsive utilizando HTML, CSS y JavaScript. Implementación de funcionalidades dinámicas con jQuery y optimización para dispositivos móviles. Mantenimiento y actualización de sitios web existentes.',
+  },
+  {
+    puesto: 'Desarrollador Web',
+    empresa: 'FreelanceWork',
+    periodo: 'Septiembre 2021 - Enero 2022',
+    descripcion:
+      'Desarrollo de sitios web para pequeñas empresas y emprendedores. Creación de landing pages, sitios corporativos y tiendas online con WordPress. Implementación de diseños personalizados y funcionalidades específicas según requerimientos del cliente.',
+  },
+  {
+    puesto: 'Desarrollador Web',
+    empresa: 'FreelanceWork',
+    periodo: 'Septiembre 2021 - Enero 2022',
+    descripcion:
+      'Desarrollo de sitios web para pequeñas empresas y emprendedores. Creación de landing pages, sitios corporativos y tiendas online con WordPress. Implementación de diseños personalizados y funcionalidades específicas según requerimientos del cliente.',
+  },
 ];
 ---
 
@@ -38,53 +38,77 @@ const experiencias = [
     </h2>
 
     <div class="max-w-3xl mx-auto">
-      {experiencias.map((exp, index) => (
-        <div class="relative pb-12 pl-8 last:pb-0">
-          {/* Timeline line */}
-          {index < experiencias.length - 1 && (
-            <div class="absolute left-3 top-3 bottom-0 w-0.5 bg-accent/30"></div>
-          )}
+      {
+        experiencias.map((exp, index) => (
+          <div class="relative pb-12 pl-8 last:pb-0">
+            {/* Timeline line */}
+            {index < experiencias.length - 1 && (
+              <div class="absolute left-3 top-3 bottom-0 w-0.5 bg-accent/30" />
+            )}
 
-          {/* Timeline dot */}
-          <div class="absolute left-0 w-6 h-6 border-2 rounded-full top-3 bg-dark border-accent"></div>
+            {/* Timeline dot */}
+            <div class="absolute left-0 w-6 h-6 border-2 rounded-full top-3 bg-dark border-accent" />
 
-          <div class="p-6 transition-shadow duration-300 rounded-lg shadow-md bg-dark/50 hover:shadow-lg">
-            <div class="flex flex-col justify-between mb-3 md:flex-row md:items-center">
-              <h3 class="text-xl font-bold text-accent">{exp.puesto}</h3>
-              <span class="text-sm text-light/60">{exp.periodo}</span>
-            </div>
-            <h4 class="mb-2 text-lg font-medium">{exp.empresa}</h4>
-            <p class="text-light/80">{exp.descripcion}</p>
+            <div class="p-6 transition-shadow duration-300 rounded-lg shadow-md bg-dark/50 hover:shadow-lg">
+              <div class="flex flex-col justify-between mb-3 md:flex-row md:items-center">
+                <h3 class="text-xl font-bold text-accent">{exp.puesto}</h3>
+                <span class="text-sm text-light/60">{exp.periodo}</span>
+              </div>
+              <h4 class="mb-2 text-lg font-medium">{exp.empresa}</h4>
+              <p class="text-light/80">{exp.descripcion}</p>
 
-            {/* Skills tags */}
-            <div class="flex flex-wrap gap-2 mt-4">
-              {exp.puesto.includes("Frontend") && (
-                <>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">React</span>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">TypeScript</span>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">TailwindCSS</span>
-                </>
-              )}
-              {exp.puesto.includes("Junior") && (
-                <>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">HTML</span>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">CSS</span>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">JavaScript</span>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">jQuery</span>
-                </>
-              )}
-              {exp.empresa.includes("Freelance") && (
-                <>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">HTML</span>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">CSS</span>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">JavaScript</span>
-                  <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">WordPress</span>
-                </>
-              )}
+              {/* Skills tags */}
+              <div class="flex flex-wrap gap-2 mt-4">
+                {exp.puesto.includes('Frontend') && (
+                  <>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      React
+                    </span>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      TypeScript
+                    </span>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      TailwindCSS
+                    </span>
+                  </>
+                )}
+                {exp.puesto.includes('Junior') && (
+                  <>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      HTML
+                    </span>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      CSS
+                    </span>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      JavaScript
+                    </span>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      jQuery
+                    </span>
+                  </>
+                )}
+                {exp.empresa.includes('Freelance') && (
+                  <>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      HTML
+                    </span>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      CSS
+                    </span>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      JavaScript
+                    </span>
+                    <span class="px-2 py-1 text-xs rounded bg-slate-800 text-secondary-foreground">
+                      WordPress
+                    </span>
+                  </>
+                )}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </section>
