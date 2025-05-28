@@ -1,14 +1,12 @@
 ---
 // import Notification from "./Notification.astro";
-import {
-  curriculumVitaeUrl,
-  linkedinProfileUrl,
-  emailAddress,
-} from "@/constants";
+import { profileLinks } from '@/constants';
 ---
 
 <section id="hero" class="relative pt-32 pb-20 bg-dark">
-  <div class="container flex flex-col items-center justify-between px-4 mx-auto md:flex-row">
+  <div
+    class="container flex flex-col items-center justify-between px-4 mx-auto md:flex-row"
+  >
     <div class="mb-10 md:w-1/2 md:mb-0">
       <h1 class="mb-4 text-4xl font-bold md:text-5xl">
         Hola, soy <span class="text-accent">Angel Contreras</span>
@@ -17,7 +15,7 @@ import {
         Desarrollador Web Junior apasionado por crear experiencias digitales
         atractivas y funcionales.
         <a
-          href={linkedinProfileUrl}
+          href={profileLinks.linkedin}
           target="_blank"
           rel="noopener"
           class="inline-block transition md:justify-center md:hover:scale-105"
@@ -38,19 +36,19 @@ import {
       </p>
 
       <a
-        href={`mailto:${emailAddress}`}
+        href={`mailto:${profileLinks.email}`}
         class="inline-block px-6 py-2 font-medium transition-colors duration-300 rounded-md bg-accent hover:bg-accent/90 text-darker"
       >
         Contáctame
       </a>
       <a
-        href={linkedinProfileUrl}
+        href={profileLinks.linkedin}
         class="inline-block px-6 py-2 font-medium transition-colors duration-300 rounded-md bg-accent hover:bg-accent/90 text-darker"
       >
         LinkedIn
       </a>
       <a
-        href={curriculumVitaeUrl}
+        href={profileLinks.curriculumVitae}
         class="inline-block px-6 py-2 font-medium transition-colors duration-300 rounded-md bg-accent hover:bg-accent/90 text-darker"
       >
         Mas sobre mí
@@ -59,7 +57,9 @@ import {
       <!-- <Notification /> -->
     </div>
     <div class="flex justify-center md:w-1/3">
-      <div class="relative w-64 h-64 overflow-hidden border-4 rounded-full border-accent/30">
+      <div
+        class="relative w-64 h-64 overflow-hidden border-4 rounded-full border-accent/30"
+      >
         <img
           src="/img/avatar1.webp"
           alt="Angel Contreras"
