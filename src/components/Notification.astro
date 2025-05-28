@@ -1,0 +1,76 @@
+---
+
+---
+
+<button id="notify-btn">Mostrar Notificación</button>
+
+<script>
+  function showNotification(message = '¡Esto es una notificación!') {
+    console.log('Mostrar notificación:', message);
+
+    const notif = document.createElement('div');
+    notif.classList.add('notification');
+    notif.textContent = message;
+    console.log('Creando notificación:', notif);
+
+    document.body.appendChild(notif);
+
+    // Forzar reflow para animación
+    void notif.offsetWidth;
+    notif.classList.add('show');
+
+    // Ocultar después de 3 segundos
+    setTimeout(() => {
+      notif.classList.remove('show');
+      notif.classList.add('hide');
+
+      // Eliminar del DOM después de animación
+      notif.addEventListener('transitionend', () => {
+        notif.remove();
+      });
+    }, 3000);
+  }
+
+  // Botón demo
+  (document.getElementById('notify-btn') as HTMLButtonElement).addEventListener(
+    'click',
+    () => {
+      showNotification('¡Hola! Esta es una notificación de prueba.');
+    },
+  );
+</script>
+
+<style is:global>
+  #notify-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .notification {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  .notification.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .notification.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+</style>
