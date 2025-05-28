@@ -5,11 +5,7 @@
     "image": "/img/listaTareas.webp",
     "category": "Web Application",
     "url": "#",
-    "technologies": [
-      "React",
-      "CSS",
-      "Vite"
-    ]
+    "technologies": ["React", "CSS", "Vite"]
   },
   {
     "name": "aplicacion-clima",
@@ -17,11 +13,7 @@
     "image": "/img/listaTareas.webp",
     "category": "Web Application",
     "url": "#",
-    "technologies": [
-      "JavaScript",
-      "API",
-      "CSS"
-    ]
+    "technologies": ["JavaScript", "API", "CSS"]
   },
   {
     "name": "clon-chat-gpt",
@@ -29,11 +21,7 @@
     "image": "/img/clonChatGpt.png",
     "category": "Web Application",
     "url": "#",
-    "technologies": [
-      "JavaScript",
-      "API",
-      "CSS"
-    ]
+    "technologies": ["JavaScript", "API", "CSS"]
   },
   {
     "name": "calculadora",
@@ -41,11 +29,7 @@
     "image": "/img/calculadora.webp",
     "category": "Web Application",
     "url": "https://amazing-queijadas-ba02d4.netlify.app/",
-    "technologies": [
-      "React",
-      "TailwindCSS",
-      "Typescript"
-    ]
+    "technologies": ["React", "TailwindCSS", "Typescript"]
   },
   {
     "name": "acortador-url",
@@ -53,11 +37,7 @@
     "image": "/img/acortadorURLs.png",
     "category": "Web Application",
     "url": "https://amazing-queijadas-ba02d4.netlify.app/",
-    "technologies": [
-      "React",
-      "TailwindCSS",
-      "Typescript"
-    ]
+    "technologies": ["React", "TailwindCSS", "Typescript"]
   },
   {
     "name": "heroes-app",
@@ -65,11 +45,7 @@
     "image": "/img/heroesApp.png",
     "category": "Web Application",
     "url": "https://amazing-queijadas-ba02d4.netlify.app/",
-    "technologies": [
-      "React",
-      "TailwindCSS",
-      "Typescript"
-    ]
+    "technologies": ["React", "TailwindCSS", "Typescript"]
   },
   {
     "name": "blog-personal",
@@ -77,12 +53,7 @@
     "image": "/img/blogPersonal.png",
     "category": "Juegos",
     "url": "#",
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Astro"
-    ]
+    "technologies": ["HTML", "CSS", "JavaScript", "Astro"]
   },
   {
     "name": "dashboard-analitico",
@@ -90,12 +61,7 @@
     "image": "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "category": "Dashboard",
     "url": "#",
-    "technologies": [
-      "React",
-      "API",
-      "TailwindCSS",
-      "Node"
-    ]
+    "technologies": ["React", "API", "TailwindCSS", "Node"]
   },
   {
     "name": "lista-de-peliculas",
@@ -103,11 +69,7 @@
     "image": "/img/peliculas.webp",
     "category": "E-commerce",
     "url": "#",
-    "technologies": [
-      "React",
-      "API",
-      "TailwindCSS"
-    ]
+    "technologies": ["React", "API", "TailwindCSS"]
   },
   {
     "name": "nocritty",
@@ -115,10 +77,6 @@
     "image": "/img/nocritty.png",
     "category": "Backend",
     "url": "#",
-    "technologies": [
-      "React",
-      "API",
-      "TailwindCSS"
-    ]
+    "technologies": ["React", "API", "TailwindCSS"]
   }
 ]
