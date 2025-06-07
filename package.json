@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "npx biome format --write ./src"
+    "format": "npx biome format --write ./src",
+    "format:prettier": "npx prettier . --write"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.6",
