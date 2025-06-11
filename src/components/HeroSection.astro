@@ -36,24 +36,26 @@ import { profileLinks } from '@/constants';
         </a>
       </p>
 
-      <a
-        href={`mailto:${profileLinks.email}`}
-        class="inline-block px-6 py-2 font-medium transition-colors duration-300 rounded-md bg-accent hover:bg-accent/90 text-darker"
-      >
-        Contáctame
-      </a>
-      <a
-        href={profileLinks.linkedin}
-        class="inline-block px-6 py-2 font-medium transition-colors duration-300 rounded-md bg-accent hover:bg-accent/90 text-darker"
-      >
-        LinkedIn
-      </a>
-      <a
-        href={profileLinks.curriculumVitae}
-        class="inline-block px-6 py-2 font-medium transition-colors duration-300 rounded-md bg-accent hover:bg-accent/90 text-darker"
-      >
-        Mas sobre mí
-      </a>
+      <div class="flex flex-col items-start gap-2 md:flex-row md:items-center">
+        <a
+          href={`mailto:${profileLinks.email}`}
+          class="inline-block px-6 py-2 font-medium transition-colors duration-300 rounded-md bg-accent hover:bg-accent/90 text-darker"
+        >
+          Contáctame
+        </a>
+        <a
+          href={profileLinks.linkedin}
+          class="inline-block px-6 py-2 font-medium transition-colors duration-300 rounded-md bg-accent hover:bg-accent/90 text-darker"
+        >
+          LinkedIn
+        </a>
+        <a
+          href={profileLinks.curriculumVitae}
+          class="inline-block px-6 py-2 font-medium transition-colors duration-300 rounded-md bg-accent hover:bg-accent/90 text-darker"
+        >
+          Mas sobre mí
+        </a>
+      </div>
 
       <!-- <Notification /> -->
     </div>
