@@ -46,3 +46,7 @@ export const POST: APIRoute = async ({ request }) => {
     return new Response(JSON.stringify({ error: 'Error al enviar el correo' }), { status: 500 });
   }
 };
+
+export const GET = () => {
+  return new Response(JSON.stringify({ message: 'Endpoint de envío de correo' }), { status: 200 });
+}
