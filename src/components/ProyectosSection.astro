@@ -115,70 +115,68 @@ const proyectos = await getProjectData();
 </section>
 
 <script>
-  // Projects filtering
-  const filterBtns =
+  // Seleccionamos los elementos necesarios
+  const filterButtons =
     document.querySelectorAll<HTMLButtonElement>('.filter-btn');
   const projectCards =
     document.querySelectorAll<HTMLDivElement>('.proyecto-card');
 
-  // Para todos los botones, les ponemos el evento de click
-  filterBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      // Update active button
-      // Actualizamos los botones a como se vallan haciendo click
-      filterBtns.forEach((b) =>
-        b.classList.remove('active', 'bg-accent', 'text-darker'),
-      );
-      filterBtns.forEach((b) =>
-        b.classList.add(
-          'bg-darker',
-          'text-light',
-          'hover:bg-dark',
-          'hover:text-accent',
-        ),
-      );
-      // Activamos el botón que se ha hecho click
-      // y le quitamos las clases de hover
-      btn.classList.add('active', 'bg-accent', 'text-darker');
-      btn.classList.remove(
+  // Función para actualizar el estado visual de los botones
+  const updateActiveButton = (activeButton: HTMLButtonElement) => {
+    // Removemos las clases activas de todos los botones
+    filterButtons.forEach((button) => {
+      button.classList.remove('active', 'bg-accent', 'text-darker');
+      button.classList.add(
         'bg-darker',
         'text-light',
         'hover:bg-dark',
         'hover:text-accent',
       );
+    });
 
-      // Recuperamos el filtro del botón que se ha hecho click
-      const filter = btn.getAttribute('data-filter');
+    // Añadimos las clases activas al botón seleccionado
+    activeButton.classList.add('active', 'bg-accent', 'text-darker');
+    activeButton.classList.remove(
+      'bg-darker',
+      'text-light',
+      'hover:bg-dark',
+      'hover:text-accent',
+    );
+  };
 
-      projectCards.forEach((card) => {
-        if (filter === 'important') {
-          console.log('important');
-          console.log({ filter, category: card.getAttribute('data-category') });
-          // Si el filtro es "important", mostramos solo los proyectos importantes
-          if (card.getAttribute('data-important') === 'true') {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
-          // card.style.display = 'block';
-          return;
-        } else if (card.getAttribute('data-category') === filter) {
-          console.log('other projects');
-          card.style.display = 'block';
-          return;
-        } else {
-          console.log('error');
-          console.log({ filter, category: card.getAttribute('data-category') });
-          card.style.display = 'none';
-        }
-      });
+  // Función para filtrar los proyectos según el filtro seleccionado
+  const filterProjects = (filter: string | null) => {
+    projectCards.forEach((card) => {
+      const isImportant = card.getAttribute('data-important') === 'true';
+      const category = card.getAttribute('data-category');
+
+      // Mostramos u ocultamos las tarjetas según el filtro
+      if (filter === 'important') {
+        card.style.display = isImportant ? 'block' : 'none';
+      } else if (filter === category) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  };
+
+  // Añadimos el evento de clic a cada botón de filtro
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+
+      // Actualizamos el botón activo y filtramos los proyectos
+      updateActiveButton(button);
+      filterProjects(filter);
     });
   });
 
-  const filterImportantBtn = document.getElementById(
+  // Simulamos un clic inicial en el botón "Más importantes"
+  const filterImportantButton = document.getElementById(
     'filter-important',
   ) as HTMLButtonElement;
-  if (filterImportantBtn) {
-    filterImportantBtn.click(); // Simula un click inicial para mostrar los proyectos importantes
+  if (filterImportantButton) {
+    filterImportantButton.click();
   }
 </script>
