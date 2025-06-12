@@ -22,9 +22,16 @@ const proyectos = await getProjectData();
     <div class="flex flex-wrap justify-center gap-2 mb-10">
       <button
         class="px-4 py-1 text-sm font-medium transition-colors duration-300 rounded-full cursor-pointer bg-accent text-darker filter-btn active"
-        data-filter="all"
+        data-filter="important"
+        id="filter-important"
+        title="Mostrar proyectos importantes"
+        aria-label="Mostrar proyectos importantes"
+        aria-pressed="true"
+        aria-controls="proyectos-grid"
+        aria-expanded="true"
+        aria-selected="true"
       >
-        Todos los proyectos
+        Mas importantes
       </button>
 
       {
@@ -32,6 +39,12 @@ const proyectos = await getProjectData();
           <button
             class="px-4 py-1 text-sm transition-colors duration-300 rounded-full cursor-pointer bg-darker text-light hover:bg-dark hover:text-accent filter-btn"
             data-filter={cat}
+            title={`Mostrar proyectos de la categoría ${cat}`}
+            aria-label={`Mostrar proyectos de la categoría ${cat}`}
+            aria-pressed="false"
+            aria-controls="proyectos-grid"
+            aria-expanded="false"
+            aria-selected="false"
           >
             {cat}
           </button>
