@@ -30,15 +30,17 @@ export const POST: APIRoute = async ({ request }) => {
 
   try {
     await transporter.sendMail({
-      from: `"${name}" <${email}>`,
+      from: `"${name}" <${import.meta.env.MAILER_EMAIL}>`,
+      replyTo: email,
       to: import.meta.env.MAILER_EMAIL,
       subject: `Formulario: ${subject}`,
       text: message,
     });
 
-    return new Response(JSON.stringify({ success: true }), { status: 200 });
+
+    return new Response(JSON.stringify({ success: true }), { status: 200, headers: { 'Content-Type': 'application/json' } });
   } catch (error) {
-    console.error(error);
+    // console.error(error);
     return new Response(JSON.stringify({ error: 'Error al enviar el correo' }), { status: 500 });
   }
 };
