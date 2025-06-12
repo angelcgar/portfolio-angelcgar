@@ -46,6 +46,7 @@ const proyectos = await getProjectData();
           <div
             class="bg-darker rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] proyecto-card"
             data-category={proyecto.category}
+            data-important={proyecto.isImportant ? 'true' : 'false'}
           >
             <div class="relative h-48 overflow-hidden">
               <img
