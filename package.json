@@ -12,6 +12,7 @@
     "format:prettier": "npx prettier . --write"
   },
   "dependencies": {
+    "@astrojs/node": "^9.2.2",
     "@tailwindcss/vite": "^4.1.6",
     "astro": "^5.2.5",
     "nodemailer": "^7.0.3"
