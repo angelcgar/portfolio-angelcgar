@@ -15,12 +15,7 @@
         </p>
 
         <!-- Formulario de contacto -->
-        <form
-          class="space-y-4"
-          id="contactForm"
-          method="POST"
-          action="/api/send-email"
-        >
+        <form class="space-y-4" id="contactForm">
           <div>
             <label for="nombre" class="block mb-2 text-sm text-light/80"
               >Nombre</label
@@ -214,3 +209,45 @@
     </div>
   </div>
 </section>
+
+<script>
+  const formElement = document.querySelector('#contactForm') as HTMLFormElement;
+
+  formElement.addEventListener('submit', async (e) => {
+    e.preventDefault(); // evitar redirección
+
+    const formData = new FormData(formElement);
+
+    const data = {
+      name: formData.get('nombre'),
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('mensaje'),
+    };
+
+    console.log({ data });
+
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+
+      console.log(result);
+
+      // todo: mostrar mensajes en notificaciones
+      if (result.success) {
+        alert('✅ Mensaje enviado con éxito');
+        formElement.reset();
+      } else {
+        alert('❌ Error al enviar el mensaje');
+      }
+    } catch (err) {
+      alert('❌ Error de red o del servidor');
+      console.error(err);
+    }
+  });
+</script>
