@@ -7,7 +7,7 @@ const categorias = [
   'Dashboard',
   'E-commerce',
   'Backend',
-];
+] as const;
 
 const proyectos = await getProjectData();
 ---
@@ -107,9 +107,11 @@ const proyectos = await getProjectData();
   const projectCards =
     document.querySelectorAll<HTMLDivElement>('.proyecto-card');
 
+  // Para todos los botones, les ponemos el evento de click
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
       // Update active button
+      // Actualizamos los botones a como se vallan haciendo click
       filterBtns.forEach((b) =>
         b.classList.remove('active', 'bg-accent', 'text-darker'),
       );
@@ -121,6 +123,8 @@ const proyectos = await getProjectData();
           'hover:text-accent',
         ),
       );
+      // Activamos el botón que se ha hecho click
+      // y le quitamos las clases de hover
       btn.classList.add('active', 'bg-accent', 'text-darker');
       btn.classList.remove(
         'bg-darker',
@@ -129,15 +133,38 @@ const proyectos = await getProjectData();
         'hover:text-accent',
       );
 
+      // Recuperamos el filtro del botón que se ha hecho click
       const filter = btn.getAttribute('data-filter');
 
       projectCards.forEach((card) => {
-        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+        if (filter === 'important') {
+          console.log('important');
+          console.log({ filter, category: card.getAttribute('data-category') });
+          // Si el filtro es "important", mostramos solo los proyectos importantes
+          if (card.getAttribute('data-important') === 'true') {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+          // card.style.display = 'block';
+          return;
+        } else if (card.getAttribute('data-category') === filter) {
+          console.log('other projects');
           card.style.display = 'block';
+          return;
         } else {
+          console.log('error');
+          console.log({ filter, category: card.getAttribute('data-category') });
           card.style.display = 'none';
         }
       });
     });
   });
+
+  const filterImportantBtn = document.getElementById(
+    'filter-important',
+  ) as HTMLButtonElement;
+  if (filterImportantBtn) {
+    filterImportantBtn.click(); // Simula un click inicial para mostrar los proyectos importantes
+  }
 </script>
