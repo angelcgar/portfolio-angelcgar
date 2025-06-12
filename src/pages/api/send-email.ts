@@ -1,24 +1,20 @@
-export const prerender = false;
 
 import type { APIRoute } from 'astro';
 import nodemailer from 'nodemailer';
 
 export const POST: APIRoute = async ({ request }) => {
-  // console.log({request})
-  // debugger
-  const formData = await request.formData();
 
-  const name = formData.get('nombre')?.toString();
-  const email = formData.get('email')?.toString();
-  const subject = formData.get('subject')?.toString() || 'Sin asunto';
-  const message = formData.get('mensaje')?.toString();
+  if (!request) {
+    return new Response(JSON.stringify({ error: 'Solicitud no válida' }), { status: 400 });
+  }
+  const body = await request.json();
 
-  console.log({
-    name,
-    email,
-    subject,
-    message,
-  })
+
+  const name = body.name
+  const email = body.email
+  const subject = body.subject || '(Sin asunto)'
+  const message = body.message
+
 
   if (!name || !email || !message) {
     return new Response(JSON.stringify({ error: 'Faltan campos obligatorios' }), { status: 400 });
