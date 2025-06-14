@@ -10,11 +10,11 @@ const navItems = [
 ---
 
 <header
-  class="fixed top-0 left-0 right-0 z-50 py-4 bg-darker/90 backdrop-blur-sm"
+  class="fixed top-0 left-0 right-0 z-50 py-4 dark:bg-darker/90 backdrop-blur-sm"
 >
   <div class="container px-4 mx-auto">
     <nav class="flex items-center justify-between">
-      <a href="/" class="text-lg font-bold text-white"
+      <a href="/" class="text-lg font-bold text-gray-800 dark:text-white"
         ><span class="text-accent">Angel</span> Contreras</a
       >
 
@@ -51,7 +51,7 @@ const navItems = [
             <li>
               <a
                 href={item.href}
-                class="transition-colors duration-300 text-light hover:text-accent"
+                class="text-gray-800 transition-colors duration-300 dark:text-light hover:text-accent"
               >
                 {item.text}
               </a>
