@@ -12,9 +12,9 @@ const categorias = [
 const proyectos = await getProjectData();
 ---
 
-<section id="proyectos" class="py-20 bg-dark">
+<section id="proyectos" class="py-20 dark:bg-dark">
   <div class="container px-4 mx-auto">
-    <h2 class="mb-12 text-3xl font-bold text-center">
+    <h2 class="mb-12 text-3xl font-bold text-center text-gray-800">
       Mis <span class="text-accent">Proyectos</span>
     </h2>
 
@@ -57,7 +57,7 @@ const proyectos = await getProjectData();
       {
         proyectos.map((proyecto) => (
           <div
-            class="bg-darker rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] proyecto-card"
+            class="dark:bg-darker rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] proyecto-card"
             data-category={proyecto.category}
             data-important={proyecto.isImportant ? 'true' : 'false'}
           >
@@ -83,7 +83,7 @@ const proyectos = await getProjectData();
               </a>
               <div class="flex flex-wrap gap-2 mb-4">
                 {proyecto.technologies.map((tech) => (
-                  <span class="px-2 py-1 text-xs rounded bg-dark text-secondary-foreground">
+                  <span class="px-2 py-1 text-xs rounded bg-slate-200 dark:bg-dark dark:text-secondary-foreground">
                     {tech}
                   </span>
                 ))}
@@ -93,29 +93,34 @@ const proyectos = await getProjectData();
                   href={proyecto.repository}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="px-4 py-2 text-sm font-medium transition-colors duration-300 rounded bg-accent text-darker hover:bg-accent/90 hover:shadow-lg inline-flex items-center"
+                  class="inline-flex items-center px-4 py-2 text-sm font-medium transition-colors duration-300 rounded bg-accent text-darker hover:bg-accent/90 hover:shadow-lg"
                 >
                   <span class="mr-1">Ver Código</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    fill="none"
                     stroke="currentColor"
-                    class="w-4 h-4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-code"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-                    />
+                    <>
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M7 8l-4 4l4 4" />
+                      <path d="M17 8l4 4l-4 4" />
+                      <path d="M14 4l-4 16" />
+                    </>
                   </svg>
                 </a>
                 <a
                   href={proyecto.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="px-4 py-2 text-sm font-medium transition-colors duration-300 rounded bg-accent text-darker hover:bg-accent/90 hover:shadow-lg inline-flex items-center"
+                  class="inline-flex items-center px-4 py-2 text-sm font-medium transition-colors duration-300 rounded bg-accent text-darker hover:bg-accent/90 hover:shadow-lg"
                 >
                   <span class="mr-1">Ver Demo</span>
                   <svg
