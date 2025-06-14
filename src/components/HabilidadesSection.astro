@@ -67,7 +67,7 @@ const habilidades = [
 ];
 ---
 
-<section id="habilidades" class="py-20 bg-darker">
+<section id="habilidades" class="py-20 dark:bg-darker">
   <div class="container px-4 mx-auto">
     <h2 class="mb-12 text-3xl font-bold text-center">
       Mis <span class="text-accent">Habilidades</span>
@@ -77,18 +77,20 @@ const habilidades = [
       {
         habilidades.map((skill) => (
           <div
-            class="flex flex-col items-center justify-center py-3 px-5 transition-transform duration-300 rounded-lg select-none bg-dark/60 hover:scale-110 cursor-crosshair skill-card"
+            class="flex flex-col items-center justify-center px-5 py-3 transition-transform duration-300 rounded-lg select-none dark:bg-dark/60 hover:scale-110 cursor-crosshair skill-card"
             style={`--skill-color: ${skill.color}`}
           >
             <img
               src={`/svg/${skill.nombre.toLowerCase()}.svg`}
-              class="w-11 h-11 object-contain"
+              class="object-contain w-11 h-11"
               alt={skill.nombre}
               aria-label={skill.nombre}
               loading="lazy"
               decoding="async"
             />
-            <span class="font-medium mt-2 text-light">{skill.nombre}</span>
+            <span class="mt-2 font-medium text-gray-800 dark:text-light">
+              {skill.nombre}
+            </span>
           </div>
         ))
       }
