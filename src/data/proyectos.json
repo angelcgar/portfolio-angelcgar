@@ -130,5 +130,17 @@
     "urlRepository": "#",
     "technologies": ["React", "Next.Js", "TailwindCSS"],
     "isImportant": false
+  },
+  {
+    "id": 12,
+    "name": "sudoku-web-app",
+    "title": "Sudoku Web App",
+    "descriptions": "#",
+    "image": "/img/sudoku-web-app.png",
+    "category": "Juegos",
+    "urlLive": "https://v0-sudoku-web-app.vercel.app/",
+    "urlRepository": "https://github.com/angelcgar/sudoku-web-app",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "isImportant": false
   }
 ]
