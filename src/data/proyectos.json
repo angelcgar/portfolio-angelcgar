@@ -16,10 +16,10 @@
     "name": "aplicacion-clima",
     "title": "Aplicación de Clima",
     "descriptions": "#",
-    "image": "/img/listaTareas.webp",
+    "image": "/img/aplicacion-clima.png",
     "category": "Web Application",
-    "urlLive": "#",
-    "urlRepository": "#",
+    "urlLive": "https://v0-responsive-weather-app-beryl.vercel.app/",
+    "urlRepository": "https://github.com/angelcgar/weather-ui",
     "technologies": ["JavaScript", "API", "CSS"],
     "isImportant": true
   },
@@ -30,8 +30,8 @@
     "descriptions": "#",
     "image": "/img/clonChatGpt.png",
     "category": "Web Application",
-    "urlLive": "#",
-    "urlRepository": "#",
+    "urlLive": "https://v0-modern-chat-interface-cyan.vercel.app/chat/750g28tr",
+    "urlRepository": "https://github.com/angelcgar/chat-ui-v0",
     "technologies": ["JavaScript", "API", "CSS"],
     "isImportant": true
   },
@@ -118,5 +118,17 @@
     "urlRepository": "#",
     "technologies": ["React", "API", "TailwindCSS"],
     "isImportant": true
+  },
+  {
+    "id": 11,
+    "name": "clon-de-netflix",
+    "title": "Clon de Netflix",
+    "descriptions": "#",
+    "image": "/img/clon-de-netflix.png",
+    "category": "Backend",
+    "urlLive": "https://v0-clon-netflix.vercel.app/",
+    "urlRepository": "#",
+    "technologies": ["React", "Next.Js", "TailwindCSS"],
+    "isImportant": false
   }
 ]
