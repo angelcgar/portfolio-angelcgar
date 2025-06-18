@@ -41,7 +41,7 @@
     "title": "Calculadora",
     "descriptions": "#",
     "image": "/img/calculadora.webp",
-    "category": "Web Application",
+    "category": "Juegos",
     "urlLive": "https://amazing-queijadas-ba02d4.netlify.app/",
     "urlRepository": "#",
     "technologies": ["React", "TailwindCSS", "Typescript"],
@@ -140,6 +140,30 @@
     "category": "Juegos",
     "urlLive": "https://v0-sudoku-web-app.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/sudoku-web-app",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "isImportant": false
+  },
+  {
+    "id": 13,
+    "name": "my-wish-list",
+    "title": "My Wish List",
+    "descriptions": "#",
+    "image": "/img/my-wish-list.png",
+    "category": "Web Application",
+    "urlLive": "#",
+    "urlRepository": "#",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "isImportant": false
+  },
+  {
+    "id": 14,
+    "name": "e-commerce-react-clothes",
+    "title": "My Wish List",
+    "descriptions": "#",
+    "image": "/img/e-commerce-react-clothes.png",
+    "category": "E-commerce",
+    "urlLive": "#",
+    "urlRepository": "#",
     "technologies": ["HTML", "CSS", "JavaScript"],
     "isImportant": false
   }
