@@ -158,12 +158,48 @@
   {
     "id": 14,
     "name": "e-commerce-react-clothes",
-    "title": "My Wish List",
+    "title": "Tienda de Ropa",
     "descriptions": "#",
     "image": "/img/e-commerce-react-clothes.webp",
     "category": "E-commerce",
     "urlLive": "#",
     "urlRepository": "#",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "isImportant": false
+  },
+  {
+    "id": 15,
+    "name": "e-commerce-laptops",
+    "title": "E commerce Laptops",
+    "descriptions": "#",
+    "image": "/img/e-commerce-laptops.webp",
+    "category": "E-commerce",
+    "urlLive": "https://pixel-powered-deals.lovable.app/",
+    "urlRepository": "https://github.com/angelcgar/pixel-powered-deals",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "isImportant": false
+  },
+  {
+    "id": 16,
+    "name": "calculadora-interes-compuesto",
+    "title": "Calculadora de Interés Compuesto",
+    "descriptions": "#",
+    "image": "/img/calculadora-interes-compuesto.webp",
+    "category": "Web Application",
+    "urlLive": "https://v0-compound-interest-calculator-olive.vercel.app/",
+    "urlRepository": "https://github.com/angelcgar/calculadora-interes-compuesto",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "isImportant": false
+  },
+  {
+    "id": 17,
+    "name": "components-style",
+    "title": "Components Style Showcase",
+    "descriptions": "#",
+    "image": "/img/components-style.webp",
+    "category": "Web Application",
+    "urlLive": "https://style-showcase-components.lovable.app/",
+    "urlRepository": "https://github.com/angelcgar/style-showcase-components",
     "technologies": ["HTML", "CSS", "JavaScript"],
     "isImportant": false
   }
