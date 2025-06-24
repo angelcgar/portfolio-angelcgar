@@ -1,5 +1,5 @@
 ---
-
+import {profileLinks} from '@/constants'
 ---
 
 <section id="contacto" class="py-20 dark:bg-darker">
@@ -115,9 +115,9 @@
               <h4 class="font-medium dark:text-light">Email</h4>
               <div class="flex items-center gap-2">
                 <a
-                  href="mailto:juan.perez@gmail.com"
+                  href={`mailto:${profileLinks.email}`}
                   class="transition-colors duration-300 dark:text-light/70 hover:text-accent"
-                  >juan.perez@gmail.com</a
+                  >{profileLinks.email}</a
                 >
                 <button
                   id="copy-email"
@@ -169,10 +169,10 @@
             <div>
               <h4 class="font-medium dark:text-light">LinkedIn</h4>
               <a
-                href="https://linkedin.com/in/juanperez"
+                href={profileLinks.linkedin}
                 target="_blank"
                 class="transition-colors duration-300 dark:text-light/70 hover:text-accent"
-                >linkedin.com/in/juanperez</a
+                >linkedin.com/in/{profileLinks.name}</a
               >
             </div>
           </div>
@@ -182,7 +182,7 @@
           <h4 class="mb-4 font-medium dark:text-light">Sígueme en</h4>
           <div class="flex space-x-4">
             <a
-              href="https://twitter.com/juanperez"
+              href={profileLinks.twitter}
               target="_blank"
               class="flex items-center justify-center w-10 h-10 transition-colors duration-300 rounded-full dark:bg-dark/80 hover:bg-accent/20"
             >
@@ -200,7 +200,7 @@
               </svg>
             </a>
             <a
-              href="https://github.com/juanperez"
+              href={profileLinks.github}
               target="_blank"
               class="flex items-center justify-center w-10 h-10 transition-colors duration-300 rounded-full dark:bg-dark/80 hover:bg-accent/20"
             >
@@ -267,11 +267,13 @@
 </script>
 
 <script>
+import { profileLinks } from "@/constants";
+
   // Seleccionamos el botón de copiar
   const copyEmailButton = document.getElementById('copy-email');
 
   // Correo electrónico a copiar
-  const email = 'juan.perez@gmail.com';
+  const email = profileLinks.email;
 
   // Evento para copiar al portapapeles
   copyEmailButton?.addEventListener('click', () => {
