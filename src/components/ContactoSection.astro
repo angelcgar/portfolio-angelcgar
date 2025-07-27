@@ -1,5 +1,5 @@
 ---
-import {profileLinks} from '@/constants'
+import { profileLinks } from '@/constants';
 ---
 
 <section id="contacto" class="py-20 dark:bg-darker">
@@ -225,6 +225,8 @@ import {profileLinks} from '@/constants'
 </section>
 
 <script>
+  import { showNotification } from '@/lib/notifications';
+
   const formElement = document.querySelector('#contactForm') as HTMLFormElement;
 
   formElement.addEventListener('submit', async (e) => {
@@ -254,20 +256,20 @@ import {profileLinks} from '@/constants'
 
       // todo: mostrar mensajes en notificaciones
       if (result.success) {
-        alert('✅ Mensaje enviado con éxito');
+        showNotification('✅ Mensaje enviado con éxito');
         formElement.reset();
       } else {
-        alert('❌ Error al enviar el mensaje');
+        showNotification('❌ Error al enviar el mensaje');
       }
     } catch (err) {
-      alert('❌ Error de red o del servidor');
+      showNotification('❌ Error de red o del servidor');
       console.error(err);
     }
   });
 </script>
 
 <script>
-import { profileLinks } from "@/constants";
+  import { profileLinks } from '@/constants';
 
   // Seleccionamos el botón de copiar
   const copyEmailButton = document.getElementById('copy-email');
