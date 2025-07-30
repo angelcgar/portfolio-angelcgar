@@ -6,6 +6,7 @@ const experiencias = [
     periodo: 'Marzo 2022 - Presente',
     descripcion:
       'Creación y diseño de sitios web y aplicaciones para varios clientes. Una aplicación para llevar los registros de las finanzas personales (Python, Flask, IA), un comercio electrónico de camisetas (Nextjs, Stripe.js), una aplicación de mapas (Angular).',
+    skills: ['Python', 'Flask', 'IA', 'Nextjs', 'Stripe.js', 'Angular'],
   },
   {
     puesto: 'DESARROLLADOR CON ENFOQUE DEVOPS',
@@ -13,6 +14,7 @@ const experiencias = [
     periodo: 'Enero 2024 - Agosto 2024',
     descripcion:
       'Automatización de despliegues utilizando Bash y Python, con integración de contenedores Docker y orquestación con Kubernetes. Implementación de buenas prácticas de CI/CD, como la ejecución automática de pruebas previas a cada build y el manejo seguro de variables de entorno. Creación de scripts personalizados para el empaquetado y despliegue de servicios.',
+    skills: ['Bash', 'Python', 'Docker', 'Kubernetes', 'CI/CD'],
   },
   {
     puesto: 'DESARROLLADOR FRONTEND',
@@ -20,6 +22,7 @@ const experiencias = [
     periodo: 'Septiembre 2021 - Enero 2022',
     descripcion:
       'Desarrollo de una tienda en línea de ropa con Next.js (Node.js + React). Implementación de autenticación, carrito de compras e integración con PayPal. Gestión de inventario con Zustand y optimización del rendimiento para una experiencia fluida. Proyecto enfocado en arquitectura full-stack escalable.',
+    skills: ['Next.js', 'Node.js', 'React', 'PayPal', 'Zustand', 'Full-stack'],
   },
   {
     puesto: 'DESARROLLADOR FRONTEND',
@@ -27,6 +30,12 @@ const experiencias = [
     periodo: 'Septiembre 2021 - Enero 2025',
     descripcion:
       'Desarrollo de aplicación en Angular con geolocalización en tiempo real, marcado de puntos de interés y trazado de rutas. Integración con API de mapas para visualización interactiva y persistencia local de rutas personalizadas.',
+    skills: [
+      'Angular',
+      'Geolocalización',
+      'API de mapas',
+      'Persistencia local',
+    ],
   },
   {
     puesto: 'DESARROLLADOR FRONTEND JUNIOR',
@@ -34,6 +43,7 @@ const experiencias = [
     periodo: 'Enero 2021 - Septiembre 2021',
     descripcion:
       'Desarrollo de sitios web y aplicaciones web utilizando HTML, CSS, JavaScript y jQuery. Implementación de diseños responsivos y optimización de rendimiento. Colaboración con clientes para entender sus necesidades y ofrecer soluciones efectivas.',
+    skills: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Responsive Design'],
   },
 ];
 ---
@@ -66,51 +76,12 @@ const experiencias = [
 
               {/* Skills tags */}
               <div class="flex flex-wrap gap-2 mt-4">
-                {exp.puesto.includes('Frontend') && (
-                  <>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      React
+                {exp.skills &&
+                  exp.skills.map((skill) => (
+                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground select-none">
+                      {skill}
                     </span>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      TypeScript
-                    </span>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      TailwindCSS
-                    </span>
-                  </>
-                )}
-                {exp.puesto.includes('Junior') && (
-                  <>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      HTML
-                    </span>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      CSS
-                    </span>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      JavaScript
-                    </span>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      jQuery
-                    </span>
-                  </>
-                )}
-                {exp.empresa.includes('Freelance') && (
-                  <>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      HTML
-                    </span>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      CSS
-                    </span>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      JavaScript
-                    </span>
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground">
-                      WordPress
-                    </span>
-                  </>
-                )}
+                  ))}
               </div>
             </div>
           </div>
