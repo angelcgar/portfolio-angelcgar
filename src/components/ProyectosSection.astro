@@ -70,14 +70,27 @@ const proyectos = await getProjectData();
               />
             </div>
             <div class="p-6">
-              <a href={`/proyectos/${proyecto.name}`}>
-                <h3 class="inline-block mb-2 text-xl font-semibold underline hover:text-accent">
-                  {proyecto.title}
-                </h3>
-              </a>
+              <h3 class="inline-block mb-2 text-xl font-semibold">
+                {proyecto.title}
+              </h3>
+
+              <p class="mb-4 text-sm text-secondary-foreground relative max-w-full pr-20">
+                {proyecto.description.length > 70 ? (
+                  <>
+                    {proyecto.description.slice(0, 70).trim()}...
+                    <a href={`/proyectos/${proyecto.name}`}>
+                      <span class="inline-block mb-2 text-xs font-semibold underline hover:text-accent">
+                        Leer más
+                      </span>
+                    </a>
+                  </>
+                ) : (
+                  proyecto.description
+                )}
+              </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 {proyecto.technologies.map((tech) => (
-                  <span class="px-2 py-1 text-xs rounded bg-slate-200 dark:bg-dark dark:text-secondary-foreground">
+                  <span class="px-2 py-1 text-xs rounded bg-slate-200 dark:bg-dark dark:text-secondary-foreground select-none">
                     {tech}
                   </span>
                 ))}
