@@ -8,7 +8,11 @@
     "category": "Web Application",
     "urlLive": "#",
     "urlRepository": "#",
-    "technologies": ["React", "CSS", "Vite"],
+    "technologies": [
+      "React",
+      "CSS",
+      "Vite"
+    ],
     "isImportant": false
   },
   {
@@ -20,7 +24,11 @@
     "category": "Web Application",
     "urlLive": "https://v0-responsive-weather-app-beryl.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/weather-ui",
-    "technologies": ["JavaScript", "API", "CSS"],
+    "technologies": [
+      "JavaScript",
+      "API",
+      "CSS"
+    ],
     "isImportant": true
   },
   {
@@ -32,7 +40,11 @@
     "category": "Web Application",
     "urlLive": "https://v0-modern-chat-interface-cyan.vercel.app/chat/750g28tr",
     "urlRepository": "https://github.com/angelcgar/chat-ui-v0",
-    "technologies": ["JavaScript", "API", "CSS"],
+    "technologies": [
+      "JavaScript",
+      "API",
+      "CSS"
+    ],
     "isImportant": true
   },
   {
@@ -44,7 +56,11 @@
     "category": "Juegos",
     "urlLive": "https://amazing-queijadas-ba02d4.netlify.app/",
     "urlRepository": "#",
-    "technologies": ["React", "TailwindCSS", "Typescript"],
+    "technologies": [
+      "React",
+      "TailwindCSS",
+      "Typescript"
+    ],
     "isImportant": false
   },
   {
@@ -56,7 +72,11 @@
     "category": "Web Application",
     "urlLive": "https://amazing-queijadas-ba02d4.netlify.app/",
     "urlRepository": "#",
-    "technologies": ["React", "TailwindCSS", "Typescript"],
+    "technologies": [
+      "React",
+      "TailwindCSS",
+      "Typescript"
+    ],
     "isImportant": true
   },
   {
@@ -68,7 +88,11 @@
     "category": "Web Application",
     "urlLive": "https://amazing-queijadas-ba02d4.netlify.app/",
     "urlRepository": "#",
-    "technologies": ["React", "TailwindCSS", "Typescript"],
+    "technologies": [
+      "React",
+      "TailwindCSS",
+      "Typescript"
+    ],
     "isImportant": false
   },
   {
@@ -80,7 +104,12 @@
     "category": "Juegos",
     "urlLive": "#",
     "urlRepository": "#",
-    "technologies": ["HTML", "CSS", "JavaScript", "Astro"],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Astro"
+    ],
     "isImportant": true
   },
   {
@@ -92,7 +121,12 @@
     "category": "Dashboard",
     "urlLive": "#",
     "urlRepository": "#",
-    "technologies": ["React", "API", "TailwindCSS", "Node"],
+    "technologies": [
+      "React",
+      "API",
+      "TailwindCSS",
+      "Node"
+    ],
     "isImportant": false
   },
   {
@@ -104,8 +138,12 @@
     "category": "E-commerce",
     "urlLive": "#",
     "urlRepository": "#",
-    "technologies": ["React", "API", "TailwindCSS"],
-    "isImportant": true
+    "technologies": [
+      "React",
+      "API",
+      "TailwindCSS"
+    ],
+    "isImportant": false
   },
   {
     "id": 10,
@@ -116,7 +154,11 @@
     "category": "Backend",
     "urlLive": "#",
     "urlRepository": "#",
-    "technologies": ["React", "API", "TailwindCSS"],
+    "technologies": [
+      "React",
+      "API",
+      "TailwindCSS"
+    ],
     "isImportant": true
   },
   {
@@ -128,7 +170,11 @@
     "category": "Backend",
     "urlLive": "https://v0-clon-netflix.vercel.app/",
     "urlRepository": "#",
-    "technologies": ["React", "Next.Js", "TailwindCSS"],
+    "technologies": [
+      "React",
+      "Next.Js",
+      "TailwindCSS"
+    ],
     "isImportant": false
   },
   {
@@ -140,7 +186,11 @@
     "category": "Juegos",
     "urlLive": "https://v0-sudoku-web-app.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/sudoku-web-app",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "isImportant": false
   },
   {
@@ -152,7 +202,11 @@
     "category": "Web Application",
     "urlLive": "#",
     "urlRepository": "#",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "isImportant": false
   },
   {
@@ -162,10 +216,14 @@
     "descriptions": "#",
     "image": "/img/e-commerce-react-clothes.webp",
     "category": "E-commerce",
-    "urlLive": "#",
-    "urlRepository": "#",
-    "technologies": ["HTML", "CSS", "JavaScript"],
-    "isImportant": false
+    "urlLive": "https://ecommerce-ropa-v7.vercel.app/",
+    "urlRepository": "https://github.com/angelcgar/ecommerce-ropa_v7",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "isImportant": true
   },
   {
     "id": 15,
@@ -176,7 +234,11 @@
     "category": "E-commerce",
     "urlLive": "https://pixel-powered-deals.lovable.app/",
     "urlRepository": "https://github.com/angelcgar/pixel-powered-deals",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "isImportant": false
   },
   {
@@ -188,7 +250,11 @@
     "category": "Web Application",
     "urlLive": "https://v0-compound-interest-calculator-olive.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/calculadora-interes-compuesto",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "isImportant": false
   },
   {
@@ -200,7 +266,11 @@
     "category": "Web Application",
     "urlLive": "https://style-showcase-components.lovable.app/",
     "urlRepository": "https://github.com/angelcgar/style-showcase-components",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "isImportant": false
   }
 ]
