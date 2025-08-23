@@ -6,5 +6,6 @@ export const profileLinks = {
   curriculumVitae: 'https://drive.google.com/file/d/1gTkkog07M_aSR30T4HbzvJxNV8S_w4Id/view?usp=sharing',
   name: "angelcgar",
   facebook: "https://www.facebook.com/angelcgar",
+  instagram: "https://www.instagram.com/contrerasc0de/",
   blog: "https://blog-angelcgar.vercel.app/"
 } as const;
