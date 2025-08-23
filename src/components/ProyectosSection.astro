@@ -74,7 +74,7 @@ const proyectos = await getProjectData();
                 {proyecto.title}
               </h3>
 
-              <p class="mb-4 text-sm text-secondary-foreground relative max-w-full pr-20">
+              <p class="relative max-w-full mb-4 text-sm pr-18 dark:text-secondary-foreground">
                 {proyecto.description.length > 70 ? (
                   <>
                     {proyecto.description.slice(0, 70).trim()}...
@@ -90,7 +90,7 @@ const proyectos = await getProjectData();
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 {proyecto.technologies.map((tech) => (
-                  <span class="px-2 py-1 text-xs rounded bg-slate-200 dark:bg-dark dark:text-secondary-foreground select-none">
+                  <span class="px-2 py-1 text-xs rounded select-none bg-slate-200 dark:bg-dark dark:text-secondary-foreground">
                     {tech}
                   </span>
                 ))}
