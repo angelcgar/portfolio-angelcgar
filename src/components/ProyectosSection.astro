@@ -51,11 +51,11 @@ const proyectos = await getProjectData();
       {
         proyectos.map((proyecto) => (
           <div
-            class="dark:bg-darker rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] proyecto-card"
+            class="bg-secondary rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] proyecto-card"
             data-category={proyecto.category}
             data-important={proyecto.isImportant ? 'true' : 'false'}
           >
-            <div class="relative h-48 overflow-hidden">
+            <div class="relative h-48 overflow-hidden rounded-lg shadow-xl shadow-gray-900">
               <img
                 src={proyecto.image}
                 alt={proyecto.title}
@@ -79,7 +79,7 @@ const proyectos = await getProjectData();
                   <>
                     {proyecto.description.slice(0, 70).trim()}...
                     <a href={`/proyectos/${proyecto.name}`}>
-                      <span class="inline-block mb-2 text-xs font-semibold underline hover:text-accent">
+                      <span class="more-info-link inline-block mb-2 font-semibold underline transition-colors duration-200 text-xs">
                         Leer más
                       </span>
                     </a>
@@ -90,7 +90,7 @@ const proyectos = await getProjectData();
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 {proyecto.technologies.map((tech) => (
-                  <span class="px-2 py-1 text-xs rounded select-none bg-slate-200 dark:bg-dark dark:text-secondary-foreground">
+                  <span class="bg-badge px-2 py-1 text-xs rounded select-none bg-slate-200 dark:bg-dark dark:text-secondary-foreground">
                     {tech}
                   </span>
                 ))}
@@ -100,7 +100,7 @@ const proyectos = await getProjectData();
                   href={proyecto.repository}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center px-4 py-2 text-sm font-medium transition-colors duration-300 rounded bg-accent text-darker hover:bg-accent/90 hover:shadow-lg"
+                  class="btn btn-primary inline-flex items-center px-4 py-2 text-sm font-medium transition-colors duration-300 rounded bg-accent text-darker hover:bg-accent/90 hover:shadow-lg"
                 >
                   <span class="mr-1">Ver Código</span>
                   <svg
@@ -127,7 +127,7 @@ const proyectos = await getProjectData();
                   href={proyecto.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center px-4 py-2 text-sm font-medium transition-colors duration-300 rounded bg-accent text-darker hover:bg-accent/90 hover:shadow-lg"
+                  class="btn btn-secondary inline-flex items-center px-4 py-2 text-sm font-medium transition-colors duration-300 rounded bg-accent text-darker hover:bg-accent/90 hover:shadow-lg"
                 >
                   <span class="mr-1">Ver Demo</span>
                   <svg
@@ -225,3 +225,9 @@ const proyectos = await getProjectData();
     filterImportantButton.click();
   }
 </script>
+
+<style>
+  .more-info-link:hover {
+    color: var(--color-accent-hover);
+  }
+</style>
