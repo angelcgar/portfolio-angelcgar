@@ -14,7 +14,12 @@
       "Vite"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 2,
@@ -31,7 +36,12 @@
       "CSS"
     ],
     "isImportant": true,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 3,
@@ -48,7 +58,12 @@
       "CSS"
     ],
     "isImportant": true,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 4,
@@ -65,7 +80,12 @@
       "Typescript"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 5,
@@ -82,7 +102,12 @@
       "Typescript"
     ],
     "isImportant": true,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 6,
@@ -99,7 +124,12 @@
       "Typescript"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 7,
@@ -117,7 +147,12 @@
       "Astro"
     ],
     "isImportant": true,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 8,
@@ -135,7 +170,12 @@
       "Node"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 9,
@@ -152,7 +192,12 @@
       "TailwindCSS"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 10,
@@ -169,7 +214,12 @@
       "TailwindCSS"
     ],
     "isImportant": true,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 11,
@@ -186,7 +236,12 @@
       "TailwindCSS"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 12,
@@ -203,7 +258,12 @@
       "JavaScript"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 13,
@@ -220,7 +280,12 @@
       "JavaScript"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 14,
@@ -237,7 +302,12 @@
       "JavaScript"
     ],
     "isImportant": true,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 15,
@@ -254,7 +324,12 @@
       "JavaScript"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 16,
@@ -271,7 +346,12 @@
       "JavaScript"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
   },
   {
     "id": 17,
@@ -288,6 +368,34 @@
       "JavaScript"
     ],
     "isImportant": false,
-    "isVisible": true
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
+      "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
+      "technologies": "Elegí React por su capacidad de crear interfaces dinámicas y modulares, CSS para un diseño simple y limpio, y Vite por su velocidad en desarrollo y construcción."
+    }
+  },
+  {
+    "id": 18,
+    "name": "ecommerce-strapi-next",
+    "title": "Ecommerce con Next.js y Strapi",
+    "descriptions": "Un ecommerce de ropa con pasarela de pagos, gestión de productos desde un CMS y frontend en Next.js. Permite mostrar productos dinámicamente, aplicar filtros y mantener el catálogo actualizado desde Strapi.",
+    "image": "/img/ecommerce.webp",
+    "category": "Web Application",
+    "urlLive": "#",
+    "urlRepository": "#",
+    "technologies": [
+      "Next.js",
+      "Strapi",
+      "TailwindCSS",
+      "React"
+    ],
+    "isImportant": false,
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Necesitaba un proyecto que simulara un ecommerce real para mi portafolio. La idea era mostrar productos dinámicos sin hardcodearlos, además de integrar una pasarela de pagos para dar mayor realismo.",
+      "solution": "Implementé Strapi como CMS para gestionar productos, categorías e imágenes de forma centralizada. En el frontend usé Next.js con Server Side Rendering para mejorar el SEO y TailwindCSS para un diseño moderno. Stripe se integró como pasarela de pagos.",
+      "technologies": "Next.js me permitió un frontend rápido y optimizado, Strapi brindó un backend flexible sin necesidad de programar APIs desde cero, TailwindCSS aceleró el diseño y Stripe facilitó la integración de pagos."
+    }
   }
 ]
