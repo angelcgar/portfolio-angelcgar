@@ -1,13 +1,57 @@
 @import "tailwindcss";
 
-@theme {
-  --color-primary: #0ea5e9;
-  --color-accent: #059669;
-  --color-accent-dark: #34d399;
-  --color-dark: #0f172a;
-  --color-darker: #0b1120;
-  --color-light: #f8fafc;
-  --color-secondary-foreground: #f8fafc;
+/* CUSTOM COLORS */
+
+/* 🌞 Light mode */
+:root {
+	/* colores en desuso */
+	--color-primary: #0ea5e9;
+
+	--color-dark: #0f172a;
+	--color-darker: #0b1120;
+	--color-light: #f8fafc;
+	--color-secondary-foreground: #f8fafc;
+
+	/* Colores background */
+	--color-bg-primary: #f9fafb;
+	--color-bg-secondary: #ffffff;
+	--color-bg-third: #ffffff;
+
+	--color-primary: #3b82f6;
+	--color-primary-hover: #10b981;
+
+	/* colores en accent */
+	--color-accent: #059669;
+	--color-accent-hover: #047857;
+
+	--color-background: #f8fafc;
+	--color-surface: #ffffff;
+
+	/* colores de texto */
+	--color-text-primary: #1f2937;
+	--color-text-secondary: #4b5563;
+	--color-text-muted: #6b7280;
+}
+
+/* 🌙 DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-bg-primary: #111827;
+
+		/* Colores background */
+		--color-bg-secondary: #1f2937;
+		--color-bg-third: #0f172a;
+
+		/* colores en accent */
+		--color-accent: #34d399;
+		--color-accent-hover: #10b981;
+
+		/* colores de texto */
+		--color-text-primary: #f9fafb;
+		--color-text-secondary: #d1d5db;
+		--color-text-muted: #9ca3af;
+	}
 }
 
 @layer utilities {
