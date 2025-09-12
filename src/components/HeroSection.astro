@@ -8,12 +8,12 @@ import { profileLinks } from '@/constants';
   >
     <div class="mb-10 md:w-1/2 md:mb-0">
       <h1
-        class="mb-4 text-4xl font-bold text-gray-800 md:text-5xl dark:text-light/80"
+        class="text-h1 mb-4"
       >
         Hola, soy <span class="text-accent">Angel Contreras</span>
       </h1>
       <p
-        class="max-w-full mb-6 text-lg text-gray-800 dark:text-light/80 text-balance"
+        class="text-body max-w-full mb-6 text-lg text-balance"
       >
         Desarrollador web con enfoque en interfaces limpias, funcionales y
         centradas en el usuario. Me especializo en transformar ideas en
@@ -39,30 +39,30 @@ import { profileLinks } from '@/constants';
         </a>
       </p>
 
-      <div class="flex flex-col items-center gap-2 md:flex-row">
-        <a
+      <div class="flex flex-col items-center gap-5 md:flex-row">
+        <!-- <a
           href={`mailto:${profileLinks.email}`}
-          class="inline-block px-4 py-1 font-medium transition-colors duration-300 rounded-md md:py-2 bg-accent text-darker hover:bg-accent/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 dark:bg-accent dark:text-dark hover:dark:bg-accent/80"
+          class="text-link"
         >
           Contáctame
-        </a>
+        </a> -->
         <a
           href={profileLinks.linkedin}
-          class="inline-block px-4 py-1 font-medium transition-colors duration-300 rounded-md md:py-2 bg-accent text-darker hover:bg-accent/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 dark:bg-accent dark:text-dark hover:dark:bg-accent/80"
+          class="text-link"
         >
           LinkedIn
         </a>
         <a
           href={profileLinks.curriculumVitae}
-          class="inline-block px-4 py-1 font-medium transition-colors duration-300 rounded-md md:py-2 bg-accent text-darker hover:bg-accent/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 dark:bg-accent dark:text-dark hover:dark:bg-accent/80"
+          class="text-link"
         >
-          Mas sobre mí
+          Descargar CV
         </a>
       </div>
     </div>
     <div class="flex justify-center md:w-1/3">
       <div
-        class="relative w-64 h-64 overflow-hidden border-4 rounded-full border-accent/30"
+        class="border-accentu relative w-64 h-64 overflow-hidden border-4 rounded-full"
       >
         <img
           src="/img/avatar1.webp"
