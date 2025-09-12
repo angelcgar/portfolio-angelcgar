@@ -60,25 +60,25 @@ const experiencias = [
           <div class="relative pb-12 pl-8 last:pb-0">
             {/* Timeline line */}
             {index < experiencias.length - 1 && (
-              <div class="absolute left-3 top-9 dark:top-3 bottom-0 w-0.5 bg-accent/30" />
+              <div class="timeline-line absolute left-3 top-9 dark:top-3 bottom-0 w-0.5" />
             )}
 
             {/* Timeline dot */}
-            <div class="absolute left-0 w-6 h-6 border-2 rounded-full top-3 dark:bg-dark border-accent" />
+            <div class="timeline-dot border-accentu absolute left-0 w-6 h-6 border-2 rounded-full top-3 dark:bg-dark" />
 
-            <div class="p-6 transition-shadow duration-300 rounded-lg shadow-md dark:bg-dark/50 hover:shadow-lg">
+            <div class="bg-secondary p-6 transition-shadow duration-300 rounded-lg shadow-md hover:shadow-lg">
               <div class="flex flex-col justify-between mb-3 md:flex-row md:items-center">
                 <h3 class="text-xl font-bold text-accent">{exp.puesto}</h3>
                 <span class="text-sm dark:text-light/60">{exp.periodo}</span>
               </div>
               <h4 class="mb-2 text-lg font-medium">{exp.empresa}</h4>
-              <p class="text-gray-800 dark:text-light/80">{exp.descripcion}</p>
+              <p class="text-body">{exp.descripcion}</p>
 
               {/* Skills tags */}
               <div class="flex flex-wrap gap-2 mt-4">
                 {exp.skills &&
                   exp.skills.map((skill) => (
-                    <span class="px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground select-none">
+                    <span class="bg-badge px-2 py-1 text-xs rounded dark:bg-slate-800 bg-slate-200 dark:text-secondary-foreground select-none">
                       {skill}
                     </span>
                   ))}
