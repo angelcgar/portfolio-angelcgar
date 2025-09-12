@@ -6,20 +6,22 @@ export async function getProjectData() {
 	//   throw new Error('Network response was not ok');
 	// }
 
-	const data = proyectos.map((proyecto) => {
-		return {
-			id: proyecto.id,
-			name: proyecto.name,
-			title: proyecto.title,
-			description: proyecto.descriptions,
-			image: proyecto.image,
-			url: proyecto.urlLive,
-			repository: proyecto.urlRepository,
-			technologies: proyecto.technologies,
-			category: proyecto.category,
-			isImportant: proyecto.isImportant,
-		}
-	})
+	const data = proyectos
+		.filter((proyecto) => proyecto.isVisible === true)
+		.map((proyecto) => {
+			return {
+				id: proyecto.id,
+				name: proyecto.name,
+				title: proyecto.title,
+				description: proyecto.descriptions,
+				image: proyecto.image,
+				url: proyecto.urlLive,
+				repository: proyecto.urlRepository,
+				technologies: proyecto.technologies,
+				category: proyecto.category,
+				isImportant: proyecto.isImportant,
+			};
+		});
 
 	// const data = proyectos;
 	return data;
