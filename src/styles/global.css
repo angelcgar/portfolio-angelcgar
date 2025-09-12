@@ -55,27 +55,27 @@
 }
 
 @layer utilities {
-  /* Animaciones personalizadas */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
+	/* Animaciones personalizadas */
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
 
-    100% {
-      opacity: 1;
-    }
-  }
+		100% {
+			opacity: 1;
+		}
+	}
 
-  .animate-fade-in {
-    animation: fadeIn 0.5s ease-in-out;
-  }
+	.animate-fade-in {
+		animation: fadeIn 0.5s ease-in-out;
+	}
 }
 
 /* Fuentes personalizadas */
 @layer base {
-  body {
-    font-family: "Inter", sans-serif;
-  }
+	body {
+		font-family: "Inter", sans-serif;
+	}
 }
 
 .text-accent {
