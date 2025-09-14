@@ -9,3 +9,17 @@ export const profileLinks = {
   instagram: "https://www.instagram.com/contrerasc0de/",
   blog: "https://blog-angelcgar.vercel.app/"
 } as const;
+
+export const categorias = [
+  'Web Application',
+  'Juegos',
+  'Dashboard',
+  'E-commerce',
+  'Backend',
+] as const;
+
+export const prioridadOrden = {
+  alta: 1,
+  media: 2,
+  baja: 3
+};

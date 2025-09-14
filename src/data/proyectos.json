@@ -2,19 +2,20 @@
   {
     "id": 1,
     "name": "aplicacion-tareas",
-    "title": "Aplicación de Tareas",
-    "descriptions": "Esta es una aplicación de tareas que permite a los usuarios crear, editar y eliminar tareas. Utiliza React para la interfaz de usuario y Vite como herramienta de construcción.",
+    "title": "Lista de Tareas",
+    "descriptions": "Esta es una lista de tareas que permite a los usuarios crear, editar y eliminar tareas. Utiliza React para la interfaz de usuario y Vite como herramienta de construcción.",
     "image": "/img/listaTareas.webp",
     "category": "Web Application",
     "urlLive": "#",
     "urlRepository": "#",
+    "priority": "alta",
     "technologies": [
       "React",
       "CSS",
       "Vite"
     ],
     "isImportant": false,
-    "isVisible": true,
+    "isVisible": false,
     "caseStudy": {
       "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
       "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
@@ -30,6 +31,7 @@
     "category": "Web Application",
     "urlLive": "https://v0-responsive-weather-app-beryl.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/weather-ui",
+    "priority": "media",
     "technologies": [
       "JavaScript",
       "API",
@@ -52,13 +54,14 @@
     "category": "Web Application",
     "urlLive": "https://v0-modern-chat-interface-cyan.vercel.app/chat/750g28tr",
     "urlRepository": "https://github.com/angelcgar/chat-ui-v0",
+    "priority": "media",
     "technologies": [
       "JavaScript",
       "API",
       "CSS"
     ],
-    "isImportant": true,
-    "isVisible": true,
+    "isImportant": false,
+    "isVisible": false,
     "caseStudy": {
       "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
       "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
@@ -74,6 +77,7 @@
     "category": "Juegos",
     "urlLive": "https://amazing-queijadas-ba02d4.netlify.app/",
     "urlRepository": "#",
+    "priority": "media",
     "technologies": [
       "React",
       "TailwindCSS",
@@ -96,6 +100,7 @@
     "category": "Web Application",
     "urlLive": "https://amazing-queijadas-ba02d4.netlify.app/",
     "urlRepository": "#",
+    "priority": "alta",
     "technologies": [
       "React",
       "TailwindCSS",
@@ -111,13 +116,14 @@
   },
   {
     "id": 6,
-    "name": "heroes-app",
+    "name": "heroes-of-mexico",
     "title": "Pagina de homenaje",
     "descriptions": "Esta es una página de homenaje a los héroes de la película. Utiliza React para la interfaz de usuario y TailwindCSS para el diseño.",
     "image": "/img/heroesApp.webp",
     "category": "Web Application",
     "urlLive": "https://amazing-queijadas-ba02d4.netlify.app/",
-    "urlRepository": "#",
+    "urlRepository": "https://github.com/angelcgar/heroes-of-mexico",
+    "priority": "media",
     "technologies": [
       "React",
       "TailwindCSS",
@@ -133,13 +139,14 @@
   },
   {
     "id": 7,
-    "name": "blog-personal",
+    "name": "blog-angelcgar",
     "title": "Blog Personal",
     "descriptions": "Esta es una página de blog personal. Utiliza HTML, CSS y JavaScript para la funcionalidad y el diseño.",
     "image": "/img/blogPersonal.webp",
-    "category": "Juegos",
-    "urlLive": "#",
+    "category": "Web Application",
+    "urlLive": "https://blog-angelcgar.vercel.app/",
     "urlRepository": "#",
+    "priority": "media",
     "technologies": [
       "HTML",
       "CSS",
@@ -163,6 +170,7 @@
     "category": "Dashboard",
     "urlLive": "#",
     "urlRepository": "#",
+    "priority": "media",
     "technologies": [
       "React",
       "API",
@@ -186,6 +194,7 @@
     "category": "E-commerce",
     "urlLive": "#",
     "urlRepository": "#",
+    "priority": "media",
     "technologies": [
       "React",
       "API",
@@ -208,6 +217,7 @@
     "category": "Backend",
     "urlLive": "#",
     "urlRepository": "#",
+    "priority": "media",
     "technologies": [
       "React",
       "API",
@@ -230,6 +240,7 @@
     "category": "Backend",
     "urlLive": "https://v0-clon-netflix.vercel.app/",
     "urlRepository": "#",
+    "priority": "media",
     "technologies": [
       "React",
       "Next.Js",
@@ -252,6 +263,7 @@
     "category": "Juegos",
     "urlLive": "https://v0-sudoku-web-app.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/sudoku-web-app",
+    "priority": "media",
     "technologies": [
       "HTML",
       "CSS",
@@ -274,6 +286,7 @@
     "category": "Web Application",
     "urlLive": "#",
     "urlRepository": "#",
+    "priority": "media",
     "technologies": [
       "HTML",
       "CSS",
@@ -296,6 +309,7 @@
     "category": "E-commerce",
     "urlLive": "https://ecommerce-ropa-v7.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/ecommerce-ropa_v7",
+    "priority": "alta",
     "technologies": [
       "HTML",
       "CSS",
@@ -318,6 +332,7 @@
     "category": "E-commerce",
     "urlLive": "https://pixel-powered-deals.lovable.app/",
     "urlRepository": "https://github.com/angelcgar/pixel-powered-deals",
+    "priority": "media",
     "technologies": [
       "HTML",
       "CSS",
@@ -340,6 +355,7 @@
     "category": "Web Application",
     "urlLive": "https://v0-compound-interest-calculator-olive.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/calculadora-interes-compuesto",
+    "priority": "media",
     "technologies": [
       "HTML",
       "CSS",
@@ -362,6 +378,7 @@
     "category": "Web Application",
     "urlLive": "https://style-showcase-components.lovable.app/",
     "urlRepository": "https://github.com/angelcgar/style-showcase-components",
+    "priority": "media",
     "technologies": [
       "HTML",
       "CSS",
@@ -384,6 +401,7 @@
     "category": "Web Application",
     "urlLive": "#",
     "urlRepository": "#",
+    "priority": "media",
     "technologies": [
       "Next.js",
       "Strapi",
