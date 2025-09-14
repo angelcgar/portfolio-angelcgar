@@ -1,13 +1,6 @@
 ---
+import { categorias } from '@/constants';
 import { getProjectData } from '../lib/api';
-
-const categorias = [
-  'Web Application',
-  'Juegos',
-  'Dashboard',
-  'E-commerce',
-  'Backend',
-] as const;
 
 const proyectos = await getProjectData();
 ---
