@@ -12,6 +12,7 @@ export async function getProjectData(): Promise<ProjectData[]> {
 	const data = proyectosData
 		.filter((proyecto) => proyecto.isVisible === true)
 		.sort((a, b) => prioridadOrden[a.priority] - prioridadOrden[b.priority])
+		.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
 		.map((proyecto) => {
 			return {
 				id: proyecto.id,

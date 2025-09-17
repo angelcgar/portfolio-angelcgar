@@ -8,6 +8,8 @@ export interface Project {
   urlLive:       string;
   urlRepository: string;
   priority:      Priority;
+  createdAt:     string;
+  updatedAt:     string;
   technologies:  string[];
   isImportant:   boolean;
   isVisible:     boolean;

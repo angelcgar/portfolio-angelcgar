@@ -9,6 +9,8 @@
     "urlLive": "#",
     "urlRepository": "#",
     "priority": "alta",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "React",
       "CSS",
@@ -32,6 +34,8 @@
     "urlLive": "https://v0-responsive-weather-app-beryl.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/weather-ui",
     "priority": "media",
+    "createdAt": "2025-09-15T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "JavaScript",
       "API",
@@ -55,6 +59,8 @@
     "urlLive": "https://v0-modern-chat-interface-cyan.vercel.app/chat/750g28tr",
     "urlRepository": "https://github.com/angelcgar/chat-ui-v0",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "JavaScript",
       "API",
@@ -78,6 +84,8 @@
     "urlLive": "https://amazing-queijadas-ba02d4.netlify.app/",
     "urlRepository": "#",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "React",
       "TailwindCSS",
@@ -101,6 +109,8 @@
     "urlLive": "https://amazing-queijadas-ba02d4.netlify.app/",
     "urlRepository": "#",
     "priority": "alta",
+    "createdAt": "2025-09-16T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "React",
       "TailwindCSS",
@@ -124,6 +134,8 @@
     "urlLive": "https://amazing-queijadas-ba02d4.netlify.app/",
     "urlRepository": "https://github.com/angelcgar/heroes-of-mexico",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "React",
       "TailwindCSS",
@@ -147,6 +159,8 @@
     "urlLive": "https://blog-angelcgar.vercel.app/",
     "urlRepository": "#",
     "priority": "media",
+    "createdAt": "2025-09-16T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "HTML",
       "CSS",
@@ -171,13 +185,15 @@
     "urlLive": "#",
     "urlRepository": "#",
     "priority": "media",
+    "createdAt": "2025-09-12T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "React",
       "API",
       "TailwindCSS",
       "Node"
     ],
-    "isImportant": false,
+    "isImportant": true,
     "isVisible": true,
     "caseStudy": {
       "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
@@ -195,6 +211,8 @@
     "urlLive": "#",
     "urlRepository": "#",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "React",
       "API",
@@ -218,6 +236,8 @@
     "urlLive": "#",
     "urlRepository": "#",
     "priority": "media",
+    "createdAt": "2025-09-13T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "React",
       "API",
@@ -241,6 +261,8 @@
     "urlLive": "https://v0-clon-netflix.vercel.app/",
     "urlRepository": "#",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "React",
       "Next.Js",
@@ -264,6 +286,8 @@
     "urlLive": "https://v0-sudoku-web-app.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/sudoku-web-app",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "HTML",
       "CSS",
@@ -287,6 +311,8 @@
     "urlLive": "#",
     "urlRepository": "#",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "HTML",
       "CSS",
@@ -310,6 +336,8 @@
     "urlLive": "https://ecommerce-ropa-v7.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/ecommerce-ropa_v7",
     "priority": "alta",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "HTML",
       "CSS",
@@ -333,6 +361,8 @@
     "urlLive": "https://pixel-powered-deals.lovable.app/",
     "urlRepository": "https://github.com/angelcgar/pixel-powered-deals",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "HTML",
       "CSS",
@@ -356,6 +386,8 @@
     "urlLive": "https://v0-compound-interest-calculator-olive.vercel.app/",
     "urlRepository": "https://github.com/angelcgar/calculadora-interes-compuesto",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "HTML",
       "CSS",
@@ -379,6 +411,8 @@
     "urlLive": "https://style-showcase-components.lovable.app/",
     "urlRepository": "https://github.com/angelcgar/style-showcase-components",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "HTML",
       "CSS",
@@ -402,6 +436,8 @@
     "urlLive": "#",
     "urlRepository": "#",
     "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-09-17T21:22:57.849Z",
     "technologies": [
       "Next.js",
       "Strapi",
