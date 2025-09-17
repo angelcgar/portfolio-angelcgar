@@ -26,40 +26,93 @@ if (!proyecto) {
 ---
 
 <Layout title={proyecto.title}>
-  <main class="container px-4 pt-32 mx-auto">
-    <article class="max-w-4xl mx-auto">
-      <header class="mb-8">
-        <h1
-          class="mb-4 text-4xl font-extrabold text-center text-gray-800 dark:text-white"
+  <main class="container px-4 pt-24 mx-auto max-w-3xl">
+    <header class="mb-10">
+      <h1
+        class="text-5xl font-extrabold text-center mb-6"
+        style="color: var(--color-heading, #222);"
+      >
+        {proyecto.title}
+      </h1>
+    </header>
+
+    <section class="flex flex-col items-center mb-10">
+      <img
+        src={proyecto.image}
+        alt={proyecto.title}
+        class="object-cover w-full h-auto max-w-2xl rounded-lg shadow-lg border"
+        style="border-color: var(--color-border, #e5e7eb);"
+      />
+    </section>
+
+    <section class="mb-10">
+      <h2
+        class="text-3xl font-bold mb-6"
+        style="color: var(--color-heading, #222);"
+      >
+        Caso de Estudio
+      </h2>
+      <div class="mb-6">
+        <h3
+          class="text-xl font-semibold mb-2"
+          style="color: var(--color-heading, #222);"
         >
-          {proyecto.title}
-        </h1>
-        <!-- <p class="text-lg text-gray-600">{proyecto.description}</p> -->
-      </header>
-
-      <section class="flex flex-col items-center mb-8">
-        <img
-          src={proyecto.image}
-          alt={proyecto.title}
-          class="object-cover w-full h-auto max-w-2xl rounded-lg shadow-md"
-        />
-      </section>
-
-      <section class="mb-8">
-        <h2 class="mb-4 text-2xl font-bold text-gray-800 dark:text-white">
-          Detalles del Proyecto
-        </h2>
-        <!-- <p class="leading-relaxed text-gray-700">{proyecto.details}</p> -->
-      </section>
-
-      <footer class="mt-12">
-        <a
-          href="/"
-          class="inline-block text-lg underline transition text-accent hover:text-accent-dark"
+          Problema
+        </h3>
+        <p
+          class="leading-relaxed text-base"
+          style="color: var(--color-text, #444);"
         >
-          ← Volver a Proyectos
-        </a>
-      </footer>
-    </article>
+          {
+            proyecto.caseStudy?.problem ??
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, justo at tempus dignissim, lorem augue gravida enim, at dictum sapien lacus et urna.'
+          }
+        </p>
+      </div>
+      <div class="mb-6">
+        <h3
+          class="text-xl font-semibold mb-2"
+          style="color: var(--color-heading, #222);"
+        >
+          Solución
+        </h3>
+        <p
+          class="leading-relaxed text-base"
+          style="color: var(--color-text, #444);"
+        >
+          {
+            proyecto.caseStudy?.solution ??
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, justo at tempus dignissim, lorem augue gravida enim, at dictum sapien lacus et urna.'
+          }
+        </p>
+      </div>
+      <div class="mb-6">
+        <h3
+          class="text-xl font-semibold mb-2"
+          style="color: var(--color-heading, #222);"
+        >
+          Tecnologías
+        </h3>
+        <p
+          class="leading-relaxed text-base"
+          style="color: var(--color-text, #444);"
+        >
+          {
+            proyecto.caseStudy?.technologies ??
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, justo at tempus dignissim, lorem augue gravida enim, at dictum sapien lacus et urna.'
+          }
+        </p>
+      </div>
+    </section>
+
+    <footer class="mt-16 text-center">
+      <a
+        href="/"
+        class="inline-block text-lg underline transition"
+        style="color: var(--color-accent, #0070f3);"
+      >
+        ← Volver a Proyectos
+      </a>
+    </footer>
   </main>
 </Layout>
