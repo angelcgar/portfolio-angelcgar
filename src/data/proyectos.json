@@ -243,7 +243,7 @@
       "API",
       "TailwindCSS"
     ],
-    "isImportant": true,
+    "isImportant": false,
     "isVisible": true,
     "caseStudy": {
       "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
@@ -268,7 +268,7 @@
       "Next.Js",
       "TailwindCSS"
     ],
-    "isImportant": false,
+    "isImportant": true,
     "isVisible": true,
     "caseStudy": {
       "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
