@@ -14,10 +14,9 @@ const proyectos = await getProjectData();
     <!-- Filter buttons -->
     <div class="flex flex-wrap justify-center gap-2 mb-10">
       <button
-        class="px-4 py-1 text-sm font-medium transition-colors duration-300 rounded-full cursor-pointer bg-accent text-darker filter-btn active"
+        class="btn btn-secondary px-4 py-1 text-sm font-medium transition-colors duration-300 rounded-full cursor-pointer bg-accent text-darker filter-btn active"
         data-filter="important"
         id="filter-important"
-        title="Mostrar proyectos importantes"
         aria-label="Mostrar proyectos importantes"
         aria-pressed="true"
       >
@@ -27,9 +26,8 @@ const proyectos = await getProjectData();
       {
         categorias.map((cat) => (
           <button
-            class="px-4 py-1 text-sm transition-colors duration-300 rounded-full cursor-pointer bg-darker text-light hover:bg-dark hover:text-accent filter-btn"
+            class="btn btn-secondary px-4 py-1 text-sm transition-colors duration-300 rounded-full cursor-pointer bg-darker text-light hover:bg-dark hover:text-accent filter-btn"
             data-filter={cat}
-            title={`Mostrar proyectos de la categoría ${cat}`}
             aria-label={`Mostrar proyectos de la categoría ${cat}`}
             aria-pressed="false"
           >
