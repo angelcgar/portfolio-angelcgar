@@ -12,9 +12,9 @@ const proyectos = await getProjectData();
     </h2>
 
     <!-- Filter buttons -->
-    <div class="flex flex-wrap justify-center gap-2 mb-10">
+    <div class="flex flex-wrap justify-center gap-2 mb-10 btn-group">
       <button
-        class="btn btn-secondary px-4 py-1 text-sm font-medium transition-colors duration-300 rounded-full cursor-pointer bg-accent text-darker filter-btn active"
+        class="btn btn-secondary btn-item px-4 py-1 text-sm font-medium transition-colors duration-300 rounded-full cursor-pointer bg-accent text-darker filter-btn active"
         data-filter="important"
         id="filter-important"
         aria-label="Mostrar proyectos importantes"
@@ -26,7 +26,7 @@ const proyectos = await getProjectData();
       {
         categorias.map((cat) => (
           <button
-            class="btn btn-secondary px-4 py-1 text-sm transition-colors duration-300 rounded-full cursor-pointer bg-darker text-light hover:bg-dark hover:text-accent filter-btn"
+            class="btn btn-secondary btn-item px-4 py-1 text-sm transition-colors duration-300 rounded-full cursor-pointer bg-darker text-light hover:bg-dark hover:text-accent filter-btn"
             data-filter={cat}
             aria-label={`Mostrar proyectos de la categoría ${cat}`}
             aria-pressed="false"
@@ -222,3 +222,21 @@ const proyectos = await getProjectData();
     color: var(--color-accent-hover);
   }
 </style>
+
+<!-- cambiar colores de los botones despues de seleccionar uno -->
+<style>
+  .btn.active {
+    background: #333;
+    color: white;
+  }
+</style>
+
+<script>
+  const buttons = document.querySelectorAll('.group .btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
