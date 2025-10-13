@@ -11,8 +11,18 @@ const proyectosData = proyectos as Project[];
 export async function getProjectData(): Promise<ProjectData[]> {
 	const data = proyectosData
 		.filter((proyecto) => proyecto.isVisible === true)
-		.sort((a, b) => prioridadOrden[a.priority] - prioridadOrden[b.priority])
-		.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+		.sort((a, b) => {
+			// 1️⃣ Primero: prioridad (baja → media → alta)
+			const diffPrioridad = prioridadOrden[a.priority] - prioridadOrden[b.priority];
+			if (diffPrioridad !== 0) return diffPrioridad;
+
+			// 2️⃣ Segundo: importancia manual
+			if (a.isImportant && !b.isImportant) return -1;
+			if (!a.isImportant && b.isImportant) return 1;
+
+			// 3️⃣ Tercero: fecha (más reciente primero)
+			return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
+		})
 		.map((proyecto) => {
 			return {
 				id: proyecto.id,
