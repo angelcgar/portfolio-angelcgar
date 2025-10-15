@@ -41,7 +41,7 @@
       "API",
       "CSS"
     ],
-    "isImportant": true,
+    "isImportant": false,
     "isVisible": true,
     "caseStudy": {
       "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
@@ -194,7 +194,7 @@
       "Node"
     ],
     "isImportant": true,
-    "isVisible": true,
+    "isVisible": false,
     "caseStudy": {
       "problem": "Los usuarios suelen necesitar una forma sencilla y rápida de gestionar sus tareas diarias sin depender de aplicaciones complejas o con demasiadas funciones.",
       "solution": "Desarrollé una aplicación web ligera con React que permite añadir, editar y eliminar tareas de manera intuitiva. La interfaz es minimalista y el rendimiento es alto gracias a Vite como bundler.",
@@ -445,6 +445,58 @@
       "React"
     ],
     "isImportant": false,
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Necesitaba un proyecto que simulara un ecommerce real para mi portafolio. La idea era mostrar productos dinámicos sin hardcodearlos, además de integrar una pasarela de pagos para dar mayor realismo.",
+      "solution": "Implementé Strapi como CMS para gestionar productos, categorías e imágenes de forma centralizada. En el frontend usé Next.js con Server Side Rendering para mejorar el SEO y TailwindCSS para un diseño moderno. Stripe se integró como pasarela de pagos.",
+      "technologies": "Next.js me permitió un frontend rápido y optimizado, Strapi brindó un backend flexible sin necesidad de programar APIs desde cero, TailwindCSS aceleró el diseño y Stripe facilitó la integración de pagos."
+    }
+  },
+  {
+    "id": 19,
+    "name": "gasto-pro",
+    "title": "Gasto Pro",
+    "descriptions": "Una aplicación web desarrollada en Python y Flask que permite a los usuarios registrar sus transacciones y obtener recomendaciones financieras generadas por IA (OpenRouter).",
+    "image": "/img/gasto-pro.webp",
+    "category": "Web Application",
+    "urlLive": "https://gasto-pro-py.onrender.com/",
+    "urlRepository": "https://github.com/angelcgar/gasto-pro",
+    "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-10-15T21:22:57.849Z",
+    "technologies": [
+      "python",
+      "flask",
+      "HTML"
+    ],
+    "isImportant": true,
+    "isVisible": true,
+    "caseStudy": {
+      "problem": "Necesitaba un proyecto que simulara un ecommerce real para mi portafolio. La idea era mostrar productos dinámicos sin hardcodearlos, además de integrar una pasarela de pagos para dar mayor realismo.",
+      "solution": "Implementé Strapi como CMS para gestionar productos, categorías e imágenes de forma centralizada. En el frontend usé Next.js con Server Side Rendering para mejorar el SEO y TailwindCSS para un diseño moderno. Stripe se integró como pasarela de pagos.",
+      "technologies": "Next.js me permitió un frontend rápido y optimizado, Strapi brindó un backend flexible sin necesidad de programar APIs desde cero, TailwindCSS aceleró el diseño y Stripe facilitó la integración de pagos."
+    }
+  },
+  {
+    "id": 20,
+    "name": "freelance-pro",
+    "title": "Freelance Pro",
+    "descriptions": "Una aplicación web desarrollada en Python y Flask que permite a los usuarios registrar sus transacciones y obtener recomendaciones financieras generadas por IA (OpenRouter).",
+    "image": "/img/freelance-pro.webp",
+    "category": "Web Application",
+    "urlLive": "https://freelance-pro-rouge.vercel.app/",
+    "urlRepository": "https://github.com/angelcgar/freelancer-pro",
+    "priority": "media",
+    "createdAt": "2025-09-17T21:22:57.849Z",
+    "updatedAt": "2025-10-15T22:22:57.849Z",
+    "technologies": [
+      "Next.Js",
+      "React",
+      "TailwindCSS",
+      "API",
+      "PayPal"
+    ],
+    "isImportant": true,
     "isVisible": true,
     "caseStudy": {
       "problem": "Necesitaba un proyecto que simulara un ecommerce real para mi portafolio. La idea era mostrar productos dinámicos sin hardcodearlos, además de integrar una pasarela de pagos para dar mayor realismo.",
