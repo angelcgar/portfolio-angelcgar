@@ -1,11 +1,11 @@
 export const profileLinks = {
-  linkedin: 'https://www.linkedin.com/in/angel-contreras-garcia-b45a66290/',
+  linkedin: 'https://www.linkedin.com/in/angel-contreras-garcia/',
   github: 'https://github.com/angelcgar',
-  twitter: 'https://twitter.com/angelcgar',
+  twitter: 'https://x.com/AngelCo99356422',
   email: 'ac5802021@gmail.com',
-  curriculumVitae: 'https://drive.google.com/file/d/1gTkkog07M_aSR30T4HbzvJxNV8S_w4Id/view?usp=sharing',
+  curriculumVitae: 'https://drive.google.com/file/d/1fUIiVj5xT3G4VOEZbG-aVG-kdhfFh8V8/view?usp=sharing',
   name: "angelcgar",
-  facebook: "https://www.facebook.com/angelcgar",
+  facebook: "https://www.facebook.com/ac5802021",
   instagram: "https://www.instagram.com/contrerasc0de/",
   blog: "https://blog-angelcgar.vercel.app/"
 } as const;
