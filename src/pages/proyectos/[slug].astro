@@ -25,12 +25,11 @@ if (!proyecto) {
 }
 ---
 
-<Layout title={proyecto.title}>
+<Layout title={proyecto.title} lang='es'>
   <main class="container px-4 pt-24 mx-auto max-w-3xl">
     <header class="mb-10">
       <h1
-        class="text-5xl font-extrabold text-center mb-6"
-        style="color: var(--color-heading, #222);"
+        class="text-4xl font-extrabold text-center mb-6 dark:text-white"
       >
         {proyecto.title}
       </h1>
@@ -48,20 +47,17 @@ if (!proyecto) {
     <section class="mb-10">
       <h2
         class="text-3xl font-bold mb-6"
-        style="color: var(--color-heading, #222);"
       >
         Caso de Estudio
       </h2>
       <div class="mb-6">
         <h3
           class="text-xl font-semibold mb-2"
-          style="color: var(--color-heading, #222);"
         >
           Problema
         </h3>
         <p
           class="leading-relaxed text-base"
-          style="color: var(--color-text, #444);"
         >
           {
             proyecto.caseStudy?.problem ??
@@ -72,13 +68,11 @@ if (!proyecto) {
       <div class="mb-6">
         <h3
           class="text-xl font-semibold mb-2"
-          style="color: var(--color-heading, #222);"
         >
           Solución
         </h3>
         <p
           class="leading-relaxed text-base"
-          style="color: var(--color-text, #444);"
         >
           {
             proyecto.caseStudy?.solution ??
@@ -89,13 +83,11 @@ if (!proyecto) {
       <div class="mb-6">
         <h3
           class="text-xl font-semibold mb-2"
-          style="color: var(--color-heading, #222);"
         >
           Tecnologías
         </h3>
         <p
           class="leading-relaxed text-base"
-          style="color: var(--color-text, #444);"
         >
           {
             proyecto.caseStudy?.technologies ??
