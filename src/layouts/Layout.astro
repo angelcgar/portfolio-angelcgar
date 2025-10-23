@@ -8,9 +8,10 @@ interface Props {
   title: string;
   description?: string;
   lang: 'en' | 'es';
+  isNavbarTransparent?: boolean;
 }
 
-const { title, description, lang } = Astro.props;
+const { title, description, lang, isNavbarTransparent = true } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,7 +22,7 @@ const { title, description, lang } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Navbar />
+    {isNavbarTransparent && <Navbar />}
     <main
       class="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100"
     >

@@ -25,8 +25,8 @@ if (!proyecto) {
 }
 ---
 
-<Layout title={proyecto.title} lang='es'>
-  <main class="container px-4 pt-24 mx-auto max-w-3xl">
+<Layout title={proyecto.title} lang='es' isNavbarTransparent={false} description={proyecto.description || 'Este es un proyecto'}>
+  <main class="container px-4 pt-4 mx-auto max-w-3xl">
     <header class="mb-10">
       <h1
         class="text-4xl font-extrabold text-center mb-6 dark:text-white"
