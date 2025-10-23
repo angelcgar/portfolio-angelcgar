@@ -1,5 +1,29 @@
 ---
+import { FULL_NAME } from '@/constants';
+
+interface Props {
+  lang: 'es' | 'en'
+}
+
+const { lang } = Astro.props;
+
 import { profileLinks } from '@/constants';
+
+const text = {
+  es: {
+    title: 'Hola, soy',
+    subtitle:
+      'Desarrollador web con enfoque en interfaces limpias, funcionales y centradas en el usuario. Me especializo en transformar ideas en experiencias digitales intuitivas.',
+    presentacion: 'Desarrollador web con enfoque en interfaces limpias, funcionales y centradas en el usuario. Me especializo en transformar ideas en experiencias digitales intuitivas.'
+  },
+  en: {
+    title: 'Hi, I am',
+    subtitle:
+      'Web developer focused on clean, functional, and user-centered interfaces. I specialize in transforming ideas into intuitive digital experiences.',
+    presentacion: 'Web developer focused on clean, functional, and user-centered interfaces. I specialize in transforming ideas into intuitive digital experiences.'
+  },
+};
+
 ---
 
 <section id="hero" class="relative pt-32 pb-20 dark:bg-dark">
@@ -10,14 +34,12 @@ import { profileLinks } from '@/constants';
       <h1
         class="text-h1 mb-4"
       >
-        Hola, soy <span class="text-accent">Angel Contreras</span>
+        {text[lang].title} <span class="text-accent">{FULL_NAME}</span>
       </h1>
       <p
         class="text-body max-w-full mb-6 text-lg text-balance"
       >
-        Desarrollador web con enfoque en interfaces limpias, funcionales y
-        centradas en el usuario. Me especializo en transformar ideas en
-        experiencias digitales intuitivas.
+        {text[lang].presentacion}
         <a
           href={profileLinks.linkedin}
           target="_blank"

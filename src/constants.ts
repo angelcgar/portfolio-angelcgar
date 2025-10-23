@@ -24,3 +24,5 @@ export const prioridadOrden = {
   media: 2,
   baja: 3
 };
+
+export const FULL_NAME = 'Angel Contreras';

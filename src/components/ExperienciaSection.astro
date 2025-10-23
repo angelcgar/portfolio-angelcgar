@@ -1,19 +1,48 @@
 ---
-const experiencias = [
+interface Props {
+  lang: 'en' | 'es';  
+}
+
+const { lang } = Astro.props;
+
+interface experienciasType {
+  puesto: string;
+  empresa: string;
+  periodo: string;
+  descripcion: string[];
+  skills: string[];
+}
+
+const experiencias: experienciasType[] = [
   {
     puesto: 'INGENIERO FULL STACK',
     empresa: 'Independiente',
     periodo: 'Marzo 2023 - Actualidad',
-    descripcion:
-      'Diseñe y desarrolle soluciones de software de ciclo completo para diversos clientes, desde la conceptualización y arquitectura hasta el despliegue y el mantenimiento. Cree una plataforma de e-commerce segura y escalable que permite al cliente iniciar sus ventas en línea, gestionando el flujo completo desde la selección de producto hasta el pago exitoso con Stripe, lo que incrementó sus ventas en un 30% durante los primeros tres meses. Desarrolle una aplicación en Python + Flask que integra modelos IA para analizar patrones de consumo, generar visualizaciones financieras y sugiere acciones concretas para minimizar gastos',
+    descripcion: [
+      'Diseñe y desarrolle soluciones de software de ciclo completo para diversos clientes, desde la conceptualización y arquitectura hasta el despliegue y el mantenimiento.',
+      'Cree una plataforma de e-commerce segura y escalable que permite al cliente iniciar sus ventas en línea, gestionando el flujo completo desde la selección de producto hasta el pago exitoso con Stripe, lo que incrementó sus ventas en un 30% durante los primeros tres meses.',
+      'Desarrolle una aplicación en Python + Flask que integra modelos IA para analizar patrones de consumo, generar visualizaciones financieras y sugiere acciones concretas para minimizar gastos.'
+    ],
     skills: ['Python', 'Flask', 'IA', 'Nextjs', 'Stripe.js', 'Angular'],
   },
   {
     puesto: 'Estudiante de Ingeniería en Desarrollo de Software',
     empresa: 'Universidad Abierta y a Distancia de México (UnADM)',
     periodo: 'Agosto 2025 - Presente',
-    descripcion:
-      'Actualmente cursando la carrera de Ingeniería en Desarrollo de Software, adquiriendo conocimientos avanzados en programación, diseño de software y metodologías de desarrollo ágil.',
+    descripcion: [
+      'Actualmente estoy cursando la carrera de Ingeniería en Desarrollo de Software, adquiriendo conocimientos avanzados en programación, diseño de software y metodologías de desarrollo ágil.',
+      'Participación en el desarrollo de proyectos académicos que involucran la creación de aplicaciones web y móviles, aplicando las mejores prácticas de la industria y colaborando en equipos multidisciplinarios.'
+    ],
+    skills: ['Java', 'C#', 'SQL', 'UML', 'Metodologías Ágiles'],
+  },
+  {
+    puesto: 'Desarrollador Full Stack',
+    empresa: 'Freelance',
+    periodo: 'Agosto 2022 - Diciembre 2023',
+    descripcion: [
+      'Desarrollé una aplicación web completa para una tienda en línea utilizando Next.js, Node.js y una base de datos MongoDB, lo que permitió a los usuarios navegar por productos, agregar artículos al carrito y completar compras de manera segura.',
+      'Optimice el rendimiento del frontend para garantizar tiempo de carga rápidos e implemente una integración segura con la API de PayPal para el procesamiento de pagos.'
+    ],
     skills: [
       'Algoritmos y Estructuras de Datos',
       'Programación Orientada a Objetos',
@@ -26,8 +55,11 @@ const experiencias = [
     puesto: 'Desarrollador FrontEnd',
     empresa: 'Consultor de Software Freelancer',
     periodo: 'Enero 2024 - Agosto 2024',
-    descripcion:
-      'Implemente el ciclo de compra de extremo a extremo, abarcando desde la autenticación de usuarios y un carrito de compras dinámico. Gestione el estado global de la aplicación con Zustand, permitiendo un manejo de inventario eficiente y en tiempo real que se sincronizaba con las acciones del usuario. Optimice el rendimiento del frontend para garantizar tiempo de carga rápidos e implemente una integración segura con la API de PayPal para el procesamiento de pagos.',
+    descripcion: [
+      'Colaboré con una startup para desarrollar una aplicación web de gestión de tareas utilizando React y Tailwind CSS, mejorando la experiencia del usuario y aumentando la retención de clientes en un 25%.',
+      'Implementé funcionalidades interactivas y optimicé el rendimiento del sitio web, logrando tiempos de carga rápidos y una navegación fluida.',
+      'Trabajé en estrecha colaboración con diseñadores y otros desarrolladores para asegurar que el producto final cumpliera con los requisitos del cliente y las mejores prácticas de la industria.',
+    ],
     skills: ['Bash', 'Python', 'Docker', 'Kubernetes', 'CI/CD'],
   },
   {
@@ -35,7 +67,11 @@ const experiencias = [
     empresa: 'Upwork',
     periodo: 'Septiembre 2021 - Enero 2022',
     descripcion:
-      'Diseñe e implemente un pipeline de CI/CD completo con Docker, Kubernetes y scripts (Python, Bash), reduciendo el tiempo de despliegue a producción en un 95%. Automatice la ejecución de pruebas y fortalecí la seguridad mediante la gestión de variables de entorno. Reduje tiempos de carga en aplicaciones hechas con wordpress en un 40% usando Redis como memoria caché.',
+      [
+        'Implementé y gestioné pipelines de CI/CD utilizando Jenkins y GitHub Actions para automatizar el proceso de construcción, prueba y despliegue de aplicaciones, reduciendo el tiempo de lanzamiento al mercado en un 40%.',
+        'Configuré y mantuve infraestructuras en la nube utilizando AWS, incluyendo la gestión de instancias EC2, S3 y RDS, asegurando alta disponibilidad y escalabilidad de las aplicaciones desplegadas.',
+        'Colaboré con equipos de desarrollo para integrar prácticas de DevOps en el ciclo de vida del desarrollo de software, promoviendo una cultura de colaboración y mejora continua.',
+      ],
     skills: ['Next.js', 'Node.js', 'React', 'PayPal', 'Zustand', 'Full-stack'],
   },
   {
@@ -43,24 +79,63 @@ const experiencias = [
     empresa: 'Freelance',
     periodo: 'Enero 2021 - Septiembre 2021',
     descripcion:
-      'Desarrollo de sitios web y aplicaciones web utilizando HTML, CSS, JavaScript y jQuery. Implementación de diseños responsivos y optimización de rendimiento. Colaboración con clientes para entender sus necesidades y ofrecer soluciones efectivas.',
+      [
+        'Desarrollé sitios web responsivos y atractivos utilizando HTML, CSS y JavaScript, asegurando una experiencia de usuario óptima en dispositivos móviles y de escritorio.',
+        'Colaboré con diseñadores para implementar interfaces de usuario basadas en maquetas, mejorando la usabilidad y la estética del sitio web.',
+        'Optimicé el rendimiento del sitio web mediante la minificación de archivos y la optimización de imágenes, lo que resultó en tiempos de carga más rápidos y una mejor experiencia para los usuarios.',
+      ],
     skills: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Responsive Design'],
   },
 ];
+
+const experienciasIngles: experienciasType[] = [
+  {
+    puesto: 'FULL STACK ENGINEER',
+    empresa: 'Independent',
+    periodo: 'March 2023 - Present',
+    descripcion: [
+      'Designed and developed end-to-end software solutions for various clients, from conceptualization and architecture to deployment and maintenance.',
+      'Created a secure and scalable e-commerce platform that enables the client to start their online sales, managing the complete flow from product selection to successful payment with Stripe, increasing their sales by 30% in the first three months.',
+      'Developed a Python + Flask application that integrates AI models to analyze consumption patterns, generate financial visualizations, and suggest concrete actions to minimize expenses.'
+    ],
+    skills: ['Python', 'Flask', 'AI', 'Nextjs', 'Stripe.js', 'Angular'],
+  },
+  {
+    puesto: 'Software Development Engineering Student',
+    empresa: 'Universidad Abierta y a Distancia de México (UnADM)',
+    periodo: 'August 2025 - Present',
+    descripcion: [
+      'Currently pursuing a degree in Software Development Engineering, acquiring advanced knowledge in programming, software design, and agile development methodologies.',
+      'Participation in academic projects involving the creation of web and mobile applications, applying industry best practices and collaborating in multidisciplinary teams.'
+    ],
+    skills: ['Java', 'C#', 'SQL', 'UML', 'Agile Methodologies'],
+  },
+];
+
+const text = {
+  es: {
+    title: 'Experiencia Laboral',
+    experiencias: experiencias
+  },
+  en: {
+    title: 'Work Experience',
+    experiencias: experienciasIngles
+  }
+}
 ---
 
 <section id="experiencia" class="py-20 dark:bg-darker">
   <div class="container px-4 mx-auto">
     <h2 class="mb-12 text-3xl font-bold text-center">
-      Experiencia <span class="text-accent">Laboral</span>
+      {text[lang].title}
     </h2>
 
     <div class="max-w-3xl mx-auto">
       {
-        experiencias.map((exp, index) => (
+        text[lang].experiencias.map((exp, index) => (
           <div class="relative pb-12 pl-8 last:pb-0">
             {/* Timeline line */}
-            {index < experiencias.length - 1 && (
+            {index < text[lang].experiencias.length - 1 && (
               <div class="timeline-line absolute left-3 top-9 dark:top-3 bottom-0 w-0.5" />
             )}
 
@@ -73,7 +148,9 @@ const experiencias = [
                 <span class="text-sm dark:text-light/60">{exp.periodo}</span>
               </div>
               <h4 class="mb-2 text-lg font-medium">{exp.empresa}</h4>
-              <p class="text-body">{exp.descripcion}</p>
+              {exp.descripcion.map((desc) => (
+                <p class="mb-2 leading-relaxed text-balance">{desc}</p>
+              ))}
 
               {/* Skills tags */}
               <div class="flex flex-wrap gap-2 mt-4">
