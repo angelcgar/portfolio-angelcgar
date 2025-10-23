@@ -7,7 +7,8 @@ export const profileLinks = {
   name: "angelcgar",
   facebook: "https://www.facebook.com/ac5802021",
   instagram: "https://www.instagram.com/contrerasc0de/",
-  blog: "https://blog-angelcgar.vercel.app/"
+  blog: "https://blog-angelcgar.vercel.app/",
+  porfolio: "https://portfolio-angelcgar.vercel.app/"
 } as const;
 
 export const categorias = [
