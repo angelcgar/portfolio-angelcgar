@@ -20,7 +20,7 @@ const proyectos = await getProjectData();
         aria-label="Mostrar proyectos importantes"
         aria-pressed="true"
       >
-        Mas importantes
+        Principales
       </button>
 
       {
@@ -233,9 +233,9 @@ const proyectos = await getProjectData();
 
 <script>
   const buttons = document.querySelectorAll('.group .btn');
-  buttons.forEach(btn => {
+  buttons.forEach((btn) => {
     btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active'));
+      buttons.forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
     });
   });

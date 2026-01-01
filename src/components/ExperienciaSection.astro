@@ -1,6 +1,6 @@
 ---
 interface Props {
-  lang: 'en' | 'es';  
+  lang: 'en' | 'es';
 }
 
 const { lang } = Astro.props;
@@ -19,9 +19,9 @@ const experiencias: experienciasType[] = [
     empresa: 'Independiente',
     periodo: 'Marzo 2023 - Actualidad',
     descripcion: [
-      'Diseñe y desarrolle soluciones de software de ciclo completo para diversos clientes, desde la conceptualización y arquitectura hasta el despliegue y el mantenimiento.',
-      'Cree una plataforma de e-commerce segura y escalable que permite al cliente iniciar sus ventas en línea, gestionando el flujo completo desde la selección de producto hasta el pago exitoso con Stripe, lo que incrementó sus ventas en un 30% durante los primeros tres meses.',
-      'Desarrolle una aplicación en Python + Flask que integra modelos IA para analizar patrones de consumo, generar visualizaciones financieras y sugiere acciones concretas para minimizar gastos.'
+      'Diseñé y desarrollé soluciones de software full-stack para diversos clientes, abarcando arquitectura, implementación, despliegue y mantenimiento.',
+      'Creé una plataforma de e-commerce segura y escalable con Stripe, permitiendo al cliente iniciar ventas en línea y aumentar sus ingresos en un 30% durante los primeros tres meses.',
+      'Desarrollé una aplicación en Python + Flask con integración de IA para analizar patrones de consumo, generar visualizaciones financieras y recomendar acciones para optimizar gastos.',
     ],
     skills: ['Python', 'Flask', 'IA', 'Nextjs', 'Stripe.js', 'Angular'],
   },
@@ -30,8 +30,8 @@ const experiencias: experienciasType[] = [
     empresa: 'Universidad Abierta y a Distancia de México (UnADM)',
     periodo: 'Agosto 2025 - Presente',
     descripcion: [
-      'Actualmente estoy cursando la carrera de Ingeniería en Desarrollo de Software, adquiriendo conocimientos avanzados en programación, diseño de software y metodologías de desarrollo ágil.',
-      'Participación en el desarrollo de proyectos académicos que involucran la creación de aplicaciones web y móviles, aplicando las mejores prácticas de la industria y colaborando en equipos multidisciplinarios.'
+      'Actualmente curso la Ingeniería en Desarrollo de Software, adquiriendo conocimientos avanzados en programación, diseño de software y metodologías ágiles.',
+      'Participo en proyectos académicos de aplicaciones web y móviles, aplicando buenas prácticas de la industria y colaborando en equipos multidisciplinarios.',
     ],
     skills: ['Java', 'C#', 'SQL', 'UML', 'Metodologías Ágiles'],
   },
@@ -41,7 +41,7 @@ const experiencias: experienciasType[] = [
     periodo: 'Agosto 2022 - Diciembre 2023',
     descripcion: [
       'Desarrollé una aplicación web completa para una tienda en línea utilizando Next.js, Node.js y una base de datos MongoDB, lo que permitió a los usuarios navegar por productos, agregar artículos al carrito y completar compras de manera segura.',
-      'Optimice el rendimiento del frontend para garantizar tiempo de carga rápidos e implemente una integración segura con la API de PayPal para el procesamiento de pagos.'
+      'Optimice el rendimiento del frontend para garantizar tiempo de carga rápidos e implemente una integración segura con la API de PayPal para el procesamiento de pagos.',
     ],
     skills: [
       'Algoritmos y Estructuras de Datos',
@@ -66,24 +66,22 @@ const experiencias: experienciasType[] = [
     puesto: 'Desarrollador DevOps',
     empresa: 'Upwork',
     periodo: 'Septiembre 2021 - Enero 2022',
-    descripcion:
-      [
-        'Implementé y gestioné pipelines de CI/CD utilizando Jenkins y GitHub Actions para automatizar el proceso de construcción, prueba y despliegue de aplicaciones, reduciendo el tiempo de lanzamiento al mercado en un 40%.',
-        'Configuré y mantuve infraestructuras en la nube utilizando AWS, incluyendo la gestión de instancias EC2, S3 y RDS, asegurando alta disponibilidad y escalabilidad de las aplicaciones desplegadas.',
-        'Colaboré con equipos de desarrollo para integrar prácticas de DevOps en el ciclo de vida del desarrollo de software, promoviendo una cultura de colaboración y mejora continua.',
-      ],
+    descripcion: [
+      'Implementé y gestioné pipelines de CI/CD utilizando Jenkins y GitHub Actions para automatizar el proceso de construcción, prueba y despliegue de aplicaciones, reduciendo el tiempo de lanzamiento al mercado en un 40%.',
+      'Configuré y mantuve infraestructuras en la nube utilizando AWS, incluyendo la gestión de instancias EC2, S3 y RDS, asegurando alta disponibilidad y escalabilidad de las aplicaciones desplegadas.',
+      'Colaboré con equipos de desarrollo para integrar prácticas de DevOps en el ciclo de vida del desarrollo de software, promoviendo una cultura de colaboración y mejora continua.',
+    ],
     skills: ['Next.js', 'Node.js', 'React', 'PayPal', 'Zustand', 'Full-stack'],
   },
   {
     puesto: 'DESARROLLADOR FRONTEND JUNIOR',
     empresa: 'Freelance',
     periodo: 'Enero 2021 - Septiembre 2021',
-    descripcion:
-      [
-        'Desarrollé sitios web responsivos y atractivos utilizando HTML, CSS y JavaScript, asegurando una experiencia de usuario óptima en dispositivos móviles y de escritorio.',
-        'Colaboré con diseñadores para implementar interfaces de usuario basadas en maquetas, mejorando la usabilidad y la estética del sitio web.',
-        'Optimicé el rendimiento del sitio web mediante la minificación de archivos y la optimización de imágenes, lo que resultó en tiempos de carga más rápidos y una mejor experiencia para los usuarios.',
-      ],
+    descripcion: [
+      'Desarrollé sitios web responsivos y atractivos utilizando HTML, CSS y JavaScript, asegurando una experiencia de usuario óptima en dispositivos móviles y de escritorio.',
+      'Colaboré con diseñadores para implementar interfaces de usuario basadas en maquetas, mejorando la usabilidad y la estética del sitio web.',
+      'Optimicé el rendimiento del sitio web mediante la minificación de archivos y la optimización de imágenes, lo que resultó en tiempos de carga más rápidos y una mejor experiencia para los usuarios.',
+    ],
     skills: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Responsive Design'],
   },
 ];
@@ -96,7 +94,7 @@ const experienciasIngles: experienciasType[] = [
     descripcion: [
       'Designed and developed end-to-end software solutions for various clients, from conceptualization and architecture to deployment and maintenance.',
       'Created a secure and scalable e-commerce platform that enables the client to start their online sales, managing the complete flow from product selection to successful payment with Stripe, increasing their sales by 30% in the first three months.',
-      'Developed a Python + Flask application that integrates AI models to analyze consumption patterns, generate financial visualizations, and suggest concrete actions to minimize expenses.'
+      'Developed a Python + Flask application that integrates AI models to analyze consumption patterns, generate financial visualizations, and suggest concrete actions to minimize expenses.',
     ],
     skills: ['Python', 'Flask', 'AI', 'Nextjs', 'Stripe.js', 'Angular'],
   },
@@ -106,7 +104,7 @@ const experienciasIngles: experienciasType[] = [
     periodo: 'August 2025 - Present',
     descripcion: [
       'Currently pursuing a degree in Software Development Engineering, acquiring advanced knowledge in programming, software design, and agile development methodologies.',
-      'Participation in academic projects involving the creation of web and mobile applications, applying industry best practices and collaborating in multidisciplinary teams.'
+      'Participation in academic projects involving the creation of web and mobile applications, applying industry best practices and collaborating in multidisciplinary teams.',
     ],
     skills: ['Java', 'C#', 'SQL', 'UML', 'Agile Methodologies'],
   },
@@ -115,13 +113,13 @@ const experienciasIngles: experienciasType[] = [
 const text = {
   es: {
     title: 'Experiencia Laboral',
-    experiencias: experiencias
+    experiencias: experiencias,
   },
   en: {
     title: 'Work Experience',
-    experiencias: experienciasIngles
-  }
-}
+    experiencias: experienciasIngles,
+  },
+};
 ---
 
 <section id="experiencia" class="py-20 dark:bg-darker">
