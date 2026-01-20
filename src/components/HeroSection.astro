@@ -2,7 +2,7 @@
 import { FULL_NAME } from '@/constants';
 
 interface Props {
-  lang: 'es' | 'en'
+  lang: 'es' | 'en';
 }
 
 const { lang } = Astro.props;
@@ -14,16 +14,17 @@ const text = {
     title: 'Hola, soy',
     subtitle:
       'Desarrollador web con enfoque en interfaces limpias, funcionales y centradas en el usuario. Me especializo en transformar ideas en experiencias digitales intuitivas.',
-    presentacion: 'Desarrollador web con enfoque en interfaces limpias, funcionales y centradas en el usuario. Me especializo en transformar ideas en experiencias digitales intuitivas.'
+    presentacion:
+      'Desarrollador web con enfoque en interfaces limpias, funcionales y centradas en el usuario. Me especializo en transformar ideas en experiencias digitales intuitivas.',
   },
   en: {
     title: 'Hi, I am',
     subtitle:
       'Web developer focused on clean, functional, and user-centered interfaces. I specialize in transforming ideas into intuitive digital experiences.',
-    presentacion: 'Web developer focused on clean, functional, and user-centered interfaces. I specialize in transforming ideas into intuitive digital experiences.'
+    presentacion:
+      'Web developer focused on clean, functional, and user-centered interfaces. I specialize in transforming ideas into intuitive digital experiences.',
   },
 };
-
 ---
 
 <section id="hero" class="relative pt-32 pb-20 dark:bg-dark">
@@ -31,14 +32,11 @@ const text = {
     class="container flex flex-col items-center justify-between px-4 mx-auto md:flex-row"
   >
     <div class="mb-10 md:w-1/2 md:mb-0 flex-1/2">
-      <h1
-        class="text-h1 mb-4"
-      >
-        {text[lang].title} <span class="text-accent">{FULL_NAME}</span>
+      <h1 class="text-h1 mb-4">
+        {text[lang].title}
+        <span class="text-accent">{FULL_NAME}</span>
       </h1>
-      <p
-        class="text-body max-w-full mb-6 text-lg text-balance"
-      >
+      <p class="text-body max-w-full mb-6 text-lg text-balance">
         {text[lang].presentacion}
         <a
           href={profileLinks.linkedin}
@@ -68,16 +66,8 @@ const text = {
         >
           Contáctame
         </a> -->
-        <a
-          href={profileLinks.linkedin}
-          class="text-link"
-        >
-          LinkedIn
-        </a>
-        <a
-          href={profileLinks.curriculumVitae}
-          class="text-link"
-        >
+        <a href={profileLinks.linkedin} class="text-link"> LinkedIn </a>
+        <a href={profileLinks.curriculumVitae} class="text-link">
           Curriculum Vitae
         </a>
       </div>
