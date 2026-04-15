@@ -1,0 +1,28 @@
+{
+  "es": {
+    "logoStart": "Inicio",
+    "logoEnd": "de pagina",
+    "menuToggle": "Open main menu",
+    "navItems": [
+      { "text": "Inicio", "href": "#hero" },
+      { "text": "Experiencia", "href": "#experiencia" },
+      { "text": "Proyectos", "href": "#proyectos" },
+      { "text": "Habilidades", "href": "#habilidades" },
+      { "text": "Sobre mí", "href": "#sobre-mi" },
+      { "text": "Contacto", "href": "#contacto" }
+    ]
+  },
+  "en": {
+    "logoStart": "Home",
+    "logoEnd": "page",
+    "menuToggle": "Open main menu",
+    "navItems": [
+      { "text": "Home", "href": "#hero" },
+      { "text": "Experience", "href": "#experiencia" },
+      { "text": "Projects", "href": "#proyectos" },
+      { "text": "Skills", "href": "#habilidades" },
+      { "text": "About me", "href": "#sobre-mi" },
+      { "text": "Contact", "href": "#contacto" }
+    ]
+  }
+}

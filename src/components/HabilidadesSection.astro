@@ -1,4 +1,13 @@
 ---
+import translations from '../i18n/habilidades.json';
+
+interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang = 'es' } = Astro.props;
+const t = translations[lang];
+
 const habilidades = [
   {
     nombre: 'HTML',
@@ -70,7 +79,7 @@ const habilidades = [
 <section id="habilidades" class="py-20 dark:bg-darker">
   <div class="container px-4 mx-auto">
     <h2 class="mb-12 text-3xl font-bold text-center">
-      Mis <span class="text-accent">Habilidades</span>
+      {t.title} <span class="text-accent">{t.titleAccent}</span>
     </h2>
 
     <div class="flex flex-wrap justify-center max-w-3xl gap-8 mx-auto">

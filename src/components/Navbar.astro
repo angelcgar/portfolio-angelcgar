@@ -1,12 +1,13 @@
 ---
-const navItems = [
-  { text: 'Inicio', href: '#hero' },
-  { text: 'Experiencia', href: '#experiencia' },
-  { text: 'Proyectos', href: '#proyectos' },
-  { text: 'Habilidades', href: '#habilidades' },
-  { text: 'Sobre mí', href: '#sobre-mi' },
-  { text: 'Contacto', href: '#contacto' },
-];
+import translations from '../i18n/navbar.json';
+
+interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang = 'es' } = Astro.props;
+const t = translations[lang];
+const navItems = t.navItems;
 ---
 
 <header
@@ -15,7 +16,7 @@ const navItems = [
   <div class="container px-4 mx-auto">
     <nav class="flex items-center justify-between">
       <a href="/" class="text-lg font-bold text-gray-800 dark:text-white"
-        ><span class="text-accent">Inicio</span> de pagina</a
+        ><span class="text-accent">{t.logoStart}</span> {t.logoEnd}</a
       >
 
       <!-- Mobile Menu Button -->
@@ -27,7 +28,7 @@ const navItems = [
         aria-controls="navbar-default"
         aria-expanded="false"
       >
-        <span class="sr-only">Open main menu</span>
+        <span class="sr-only">{t.menuToggle}</span>
         <svg
           class="w-5 h-5"
           aria-hidden="true"
