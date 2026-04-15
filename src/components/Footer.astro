@@ -1,11 +1,20 @@
 ---
+import { FULL_NAME } from '@/constants';
+import translations from '../i18n/footer.json';
+
+interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang = 'es' } = Astro.props;
+const t = translations[lang];
 const currentYear = new Date().getFullYear();
 ---
 
 <footer class="py-4 text-center">
   <div class="container px-4 mx-auto">
     <p class="text-body text-sm text-gray-800">
-      &copy; {currentYear} Angel Contreras. Todos los derechos reservados.
+      &copy; {currentYear} {FULL_NAME}. {t.copyright}
     </p>
   </div>
 </footer>

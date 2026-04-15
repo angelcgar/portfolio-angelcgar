@@ -1,35 +1,42 @@
 ---
 import { profileLinks } from '@/constants';
+import translations from '../i18n/contacto.json';
+
+interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang = 'es' } = Astro.props;
+const t = translations[lang];
 ---
 
 <section id="contacto" class="py-20 dark:bg-darker">
   <div class="container px-4 mx-auto">
-    <h2 class="mb-6 text-3xl font-bold text-center">Contáctame</h2>
+    <h2 class="mb-6 text-3xl font-bold text-center">{t.title}</h2>
 
     <p class="text-body mb-6 text-center">
-      ¿Tienes un proyecto en mente o una idea que quieras compartir? Estoy listo
-      para colaborar contigo.
+      {t.subtitle}
     </p>
 
     <div class="grid max-w-5xl grid-cols-1 gap-10 mx-auto lg:grid-cols-2">
       <!-- Contact Form -->
       <div>
-        <h3 class="mb-6 text-xl font-semibold">Envíame un mensaje</h3>
+        <h3 class="mb-6 text-xl font-semibold">{t.formTitle}</h3>
         <p class="text-body mb-6">
-          Completa el formulario y te responderé lo antes posible.
+          {t.formSubtitle}
         </p>
 
         <!-- Formulario de contacto -->
         <form class="space-y-4" id="contactForm">
           <div>
             <label for="nombre" class="text-body block mb-2 text-sm"
-              >Nombre*</label
+              >{t.labelName}</label
             >
             <input
               type="text"
               id="nombre"
               class="w-full p-3 border rounded-md dark:bg-dark border-dark/60 focus:outline-none focus:ring-2 focus:ring-accent/50 dark:text-light"
-              placeholder="Tu nombre"
+              placeholder={t.placeholderName}
               required
               name="nombre"
             />
@@ -37,13 +44,13 @@ import { profileLinks } from '@/constants';
 
           <div>
             <label for="email" class="text-body block mb-2 text-sm"
-              >Email*</label
+              >{t.labelEmail}</label
             >
             <input
               type="email"
               id="email"
               class="w-full p-3 border rounded-md dark:bg-dark border-dark/60 focus:outline-none focus:ring-2 focus:ring-accent/50 dark:text-light"
-              placeholder="Tu dirección de email"
+              placeholder={t.placeholderEmail}
               required
               name="email"
             />
@@ -52,25 +59,25 @@ import { profileLinks } from '@/constants';
           <!-- asunto -->
           <div>
             <label for="subject" class="text-body block mb-2 text-sm"
-              >Asunto</label
+              >{t.labelSubject}</label
             >
             <input
               type="text"
               id="subject"
               class="w-full p-3 border rounded-md dark:bg-dark border-dark/60 focus:outline-none focus:ring-2 focus:ring-accent/50 dark:text-light"
-              placeholder="Asunto del mensaje"
+              placeholder={t.placeholderSubject}
               name="subject"
             />
           </div>
 
           <div>
             <label for="mensaje" class="text-body block mb-2 text-sm"
-              >Mensaje*</label
+              >{t.labelMessage}</label
             >
             <textarea
               id="mensaje"
               class="w-full p-3 border rounded-md dark:bg-dark border-dark/60 focus:outline-none focus:ring-2 focus:ring-accent/50 dark:text-light"
-              placeholder="Escribe tu mensaje aquí..."
+              placeholder={t.placeholderMessage}
               required
               name="mensaje"></textarea>
           </div>
@@ -79,14 +86,14 @@ import { profileLinks } from '@/constants';
             type="submit"
             class="btn-contact w-full px-4 py-3 font-medium transition-colors duration-300 rounded-md cursor-pointer bg-accent hover:bg-accent/90 text-darker"
           >
-            Enviar mensaje
+            {t.buttonSend}
           </button>
         </form>
       </div>
 
       <!-- Contact Information -->
       <div class="lg:pl-10">
-        <h3 class="mb-6 text-xl font-semibold">Información de contacto</h3>
+        <h3 class="mb-6 text-xl font-semibold">{t.contactInfoTitle}</h3>
 
         <div class="space-y-6">
           <div class="flex items-start">
@@ -118,7 +125,7 @@ import { profileLinks } from '@/constants';
                 <button
                   id="copy-email"
                   class="bg-secondary p-1 transition-colors duration-300 rounded-full cursor-pointer hover:bg-accent/20"
-                  title="Copiar al portapapeles"
+                  title={t.copyTooltip}
                 >
                   <svg
                     fill="none"
@@ -173,11 +180,11 @@ import { profileLinks } from '@/constants';
         </div>
 
         <div class="mt-10">
-          <h4 class="mb-4 font-medium dark:text-light">Sígueme en</h4>
+          <h4 class="mb-4 font-medium dark:text-light">{t.followTitle}</h4>
           <div class="flex space-x-4">
             <a
               href={profileLinks.twitter}
-              aria-label="ver mas en X"
+              aria-label={t.ariaTwitter}
               target="_blank"
               class="bg-secondary red-social flex items-center justify-center w-10 h-10 transition-colors duration-300 rounded-full cursor-pointer"
             >
@@ -195,7 +202,7 @@ import { profileLinks } from '@/constants';
             </a>
             <a
               href={profileLinks.github}
-              aria-label="ver mas en GitHub"
+              aria-label={t.ariaGithub}
               target="_blank"
               class="bg-secondary red-social flex items-center justify-center w-10 h-10 transition-colors duration-300 rounded-full"
             >
@@ -213,7 +220,7 @@ import { profileLinks } from '@/constants';
             </a>
             <a
               href={profileLinks.facebook}
-              aria-label="ver más en Facebook"
+              aria-label={t.ariaFacebook}
               target="_blank"
               class="bg-secondary red-social flex items-center justify-center w-10 h-10 transition-colors duration-300 rounded-full"
             >
@@ -232,7 +239,7 @@ import { profileLinks } from '@/constants';
 
             <a
               href={profileLinks.instagram}
-              aria-label="ver más en instagram"
+              aria-label={t.ariaInstagram}
               target="_blank"
               class="bg-secondary red-social flex items-center justify-center w-10 h-10 transition-colors duration-300 rounded-full"
             >
@@ -253,11 +260,10 @@ import { profileLinks } from '@/constants';
         <div class="mt-10">
           <div class="rounded-md bg-accent/10 dark:bg-dark/60">
             <h4 class="mb-2 text-lg font-semibold dark:text-light">
-              ¿Te interesa aprender más?
+              {t.blogTitle}
             </h4>
             <p class="mb-3 dark:text-light/80">
-              También escribo sobre desarrollo web, programación y tecnología en
-              mi blog personal.
+              {t.blogDescription}
             </p>
             <a
               href={profileLinks.blog}
@@ -265,7 +271,7 @@ import { profileLinks } from '@/constants';
               rel="noopener"
               class="btn-contact inline-block px-4 py-2 font-medium transition-colors duration-300 rounded-md bg-accent text-darker hover:bg-accent/90"
             >
-              Leer mi blog
+              {t.blogButton}
             </a>
           </div>
         </div>
