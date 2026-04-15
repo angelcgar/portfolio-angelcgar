@@ -1,43 +1,38 @@
 ---
+import translations from '../i18n/sobreMi.json';
 
+interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang = 'es' } = Astro.props;
+const t = translations[lang];
 ---
 
 <section id="sobre-mi" class="py-20 dark:bg-dark">
   <div class="container px-4 mx-auto">
     <h2 class="mb-12 text-3xl font-bold text-center">
-      Sobre <span class="text-accent">Mí</span>
+      {t.title} <span class="text-accent">{t.titleAccent}</span>
     </h2>
 
     <div class="max-w-3xl p-8 mx-auto rounded-lg shadow-md">
       <p
         class="text-body mb-4 leading-relaxed text-balance"
       >
-        Soy un desarrollador web con un solido conocimiento por crear
-        experiencias digitales atractivas e interactivas. Mi viaje en el
-        desarrollo web comenzó hace 3 años mientras estudiaba informática, donde
-        descubrí mi pasión por la creación de sitios web.
+        {t.paragraph1}
       </p>
       <p
         class="text-body mb-4 leading-relaxed text-balance"
       >
-        Me especializo en el desarrollo frontend, con conocimientos en HTML,
-        CSS, JavaScript y frameworks modernos como React y Next.js. También
-        tengo experiencia con herramientas de diseño y control de versiones como
-        Git.
+        {t.paragraph2}
       </p>
       <p
         class="text-body mb-4 leading-relaxed text-balance"
       >
-        Mi objetivo es convertirme en un desarrollador full-stack, y actualmente
-        estoy aprendiendo Node.js y bases de datos como MongoDB para ampliar mis
-        habilidades en el backend. Disfruto enfrentando desafíos de programación
-        y aprendiendo nuevas tecnologías para mejorar constantemente.
+        {t.paragraph3}
       </p>
       <p class="text-body leading-relaxed text-balance">
-        Cuando no estoy codificando, me gusta leer sobre las últimas tendencias
-        tecnológicas, jugar videojuegos y explorar la naturaleza. Estoy siempre
-        abierto a nuevas oportunidades y colaboraciones que me permitan crecer
-        como profesional.
+        {t.paragraph4}
       </p>
     </div>
   </div>

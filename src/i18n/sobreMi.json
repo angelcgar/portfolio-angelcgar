@@ -1,0 +1,18 @@
+{
+  "es": {
+    "title": "Sobre",
+    "titleAccent": "Mí",
+    "paragraph1": "Soy un desarrollador web con un solido conocimiento por crear experiencias digitales atractivas e interactivas. Mi viaje en el desarrollo web comenzó hace 3 años mientras estudiaba informática, donde descubrí mi pasión por la creación de sitios web.",
+    "paragraph2": "Me especializo en el desarrollo frontend, con conocimientos en HTML, CSS, JavaScript y frameworks modernos como React y Next.js. También tengo experiencia con herramientas de diseño y control de versiones como Git.",
+    "paragraph3": "Mi objetivo es convertirme en un desarrollador full-stack, y actualmente estoy aprendiendo Node.js y bases de datos como MongoDB para ampliar mis habilidades en el backend. Disfruto enfrentando desafíos de programación y aprendiendo nuevas tecnologías para mejorar constantemente.",
+    "paragraph4": "Cuando no estoy codificando, me gusta leer sobre las últimas tendencias tecnológicas, jugar videojuegos y explorar la naturaleza. Estoy siempre abierto a nuevas oportunidades y colaboraciones que me permitan crecer como profesional."
+  },
+  "en": {
+    "title": "About",
+    "titleAccent": "Me",
+    "paragraph1": "I am a web developer with solid knowledge in creating attractive and interactive digital experiences. My journey in web development began 3 years ago while studying computer science, where I discovered my passion for creating websites.",
+    "paragraph2": "I specialize in frontend development, with knowledge in HTML, CSS, JavaScript and modern frameworks like React and Next.js. I also have experience with design tools and version control like Git.",
+    "paragraph3": "My goal is to become a full-stack developer, and I am currently learning Node.js and databases like MongoDB to expand my backend skills. I enjoy facing programming challenges and learning new technologies to constantly improve.",
+    "paragraph4": "When I'm not coding, I like to read about the latest technology trends, play video games and explore nature. I am always open to new opportunities and collaborations that allow me to grow as a professional."
+  }
+}
