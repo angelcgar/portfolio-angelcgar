@@ -1,5 +1,5 @@
 ---
-import { FULL_NAME } from '@/constants';
+import { FIRST_NAME, FULL_NAME, LAST_NAME } from '@/constants';
 
 interface Props {
   lang: 'es' | 'en';
@@ -34,7 +34,7 @@ const text = {
     <div class="mb-10 md:w-1/2 md:mb-0 flex-1/2">
       <h1 class="text-h1 mb-4">
         {text[lang].title}
-        <span class="text-accent">{FULL_NAME}</span>
+        <span class="text-accent">{FIRST_NAME}</span> <span>{LAST_NAME}</span>
       </h1>
       <p class="text-body max-w-full mb-6 text-lg text-balance">
         {text[lang].presentacion}

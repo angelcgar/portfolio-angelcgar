@@ -26,3 +26,7 @@ export const prioridadOrden = {
 };
 
 export const FULL_NAME = 'Angel Contreras';
+
+export const FIRST_NAME = 'Angel'
+
+export const LAST_NAME = 'Contreras'
